@@ -5,7 +5,7 @@ const map = new mapboxgl.Map({
     // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
     // style: "mapbox://styles/hookahlocator/clsox9viv009f01pk1mf40pwu",
     // style: "mapbox://styles/mapbox/satellite-streets-v12",
-    style: "mapbox://styles/mapbox/dark-v10",
+    style: "mapbox://styles/mapbox/dark-v10?optimize=true",
 
     // style: "mapbox://styles/hookahlocator/clsumxbp8002g01pihdv4290g",
     center: [-9.1963944,
