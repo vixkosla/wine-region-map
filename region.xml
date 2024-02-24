@@ -1,0 +1,6449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<hiblock>
+	<items>
+		<item>
+			<id>18</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Португалия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>portugaliya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>19</id>
+			<uf_parent>18</uf_parent>
+			<uf_name>Винью Верде</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>vinyu_verde</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>20</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Франция</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>frantsiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>21</id>
+			<uf_parent>20</uf_parent>
+			<uf_name>Арманьяк</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>armanyak</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>22</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Шотландия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>shotlandiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>23</id>
+			<uf_parent>22</uf_parent>
+			<uf_name>Острова Оркни</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>ostrova_orkni</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>24</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Испания</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>ispaniya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>25</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Каталония</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>kataloniya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>26</id>
+			<uf_parent>25</uf_parent>
+			<uf_name>Кава</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kava</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>27</id>
+			<uf_parent>20</uf_parent>
+			<uf_name>Шампань</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>shampan</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>28</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Германия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>germaniya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>29</id>
+			<uf_parent>28</uf_parent>
+			<uf_name>Рейнгау</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>reyngau</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>30</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Австралия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>avstraliya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>31</id>
+			<uf_parent>30</uf_parent>
+			<uf_name>Южная Австралия</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>yuzhnaya_avstraliya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>32</id>
+			<uf_parent>31</uf_parent>
+			<uf_name>Долина Баросса</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>dolina_barossa</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>33</id>
+			<uf_parent>30</uf_parent>
+			<uf_name>Новый Южный Уэльс</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>novyy_yuzhnyy_uels</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>34</id>
+			<uf_parent>31</uf_parent>
+			<uf_name>Долина Иден</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>dolina_iden</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>35</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Австрия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>avstriya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>36</id>
+			<uf_parent>35</uf_parent>
+			<uf_name>Южная Штирия</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>yuzhnaya_shtiriya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>37</id>
+			<uf_parent>35</uf_parent>
+			<uf_name>Нижняя Австрия</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>nizhnyaya_avstriya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>38</id>
+			<uf_parent>37</uf_parent>
+			<uf_name>Карнунтум</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>karnuntum</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>39</id>
+			<uf_parent>37</uf_parent>
+			<uf_name>Кремшталь</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kremshtal</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>40</id>
+			<uf_parent>37</uf_parent>
+			<uf_name>Кампталь</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kamptal</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>41</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Аргентина</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>argentina</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>42</id>
+			<uf_parent>41</uf_parent>
+			<uf_name>Мендоса</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>mendosa</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>43</id>
+			<uf_parent>41</uf_parent>
+			<uf_name>Сан-Хуан</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>san_khuan</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>44</id>
+			<uf_parent>43</uf_parent>
+			<uf_name>Валле де Тулум</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>valle_de_tulum</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>45</id>
+			<uf_parent>42</uf_parent>
+			<uf_name>Долина Уко</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>dolina_uko</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>46</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Армения</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>armeniya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>47</id>
+			<uf_parent>46</uf_parent>
+			<uf_name>Арагацотнская область</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>aragatsotnskaya_oblast</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>48</id>
+			<uf_parent />
+			<uf_name>Россия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>rossiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file>0</uf_file>
+		</item>
+		<item>
+			<id>49</id>
+			<uf_parent>48</uf_parent>
+			<uf_name>Краснодарский край</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>krasnodarskiy_kray</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>50</id>
+			<uf_parent>46</uf_parent>
+			<uf_name>Араратская долина</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>araratskaya_dolina</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>51</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Беларусь</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>belarus</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>52</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Гайана</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>gayana</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>53</id>
+			<uf_parent>28</uf_parent>
+			<uf_name>Рейнхессен</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>reynkhessen</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>54</id>
+			<uf_parent>28</uf_parent>
+			<uf_name>Мозель-Саар-Рувер</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>mozel_saar_ruver</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>55</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Греция</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>gretsiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>56</id>
+			<uf_parent>55</uf_parent>
+			<uf_name>Македония</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>makedoniya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>57</id>
+			<uf_parent>55</uf_parent>
+			<uf_name>Халкидики</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>khalkidiki</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>58</id>
+			<uf_parent>55</uf_parent>
+			<uf_name>Пелопоннес</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>peloponnes</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>59</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Грузия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>gruziya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>60</id>
+			<uf_parent>59</uf_parent>
+			<uf_name>Кахетия</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>kakhetiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>61</id>
+			<uf_parent>60</uf_parent>
+			<uf_name>Алазанская долина</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>alazanskaya_dolina</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>62</id>
+			<uf_parent>60</uf_parent>
+			<uf_name>Цинандали</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>tsinandali</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>63</id>
+			<uf_parent>60</uf_parent>
+			<uf_name>Мукузани</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>mukuzani</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>64</id>
+			<uf_parent>60</uf_parent>
+			<uf_name>Киндзмараули</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kindzmarauli</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>65</id>
+			<uf_parent>48</uf_parent>
+			<uf_name>Ростовская область</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>rostovskaya_oblast</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>66</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Ирландия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>irlandiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>67</id>
+			<uf_parent>66</uf_parent>
+			<uf_name>Дублин</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>dublin</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>68</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Кастилия и Леон</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>kastiliya_i_leon</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>69</id>
+			<uf_parent>68</uf_parent>
+			<uf_name>Руэда</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>rueda</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>70</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Приорат</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>priorat</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>71</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Доминикана</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>dominikana</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>72</id>
+			<uf_parent>25</uf_parent>
+			<uf_name>Костерс дель Сегре</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kosters_del_segre</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>73</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Ла Манча</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>la_mancha</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>74</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Кастилия Ла Манча</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>kastiliya_la_mancha</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>75</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Рибера-дель-Дуэро</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>ribera_del_duero</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>76</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Толедо</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>toledo</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>77</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Вальдепеньяс</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>valdepenyas</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>78</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Мурсия</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>mursiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>79</id>
+			<uf_parent>78</uf_parent>
+			<uf_name>Хумилья</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>khumilya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>80</id>
+			<uf_parent>25</uf_parent>
+			<uf_name>Пенедес</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>penedes</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>81</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Риоха</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>riokha</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>82</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Италия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>italiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>83</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Венето</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>veneto</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>84</id>
+			<uf_parent>83</uf_parent>
+			<uf_name>Амароне делла Вальполичелла Классико</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>amarone_della_valpolichella_klassiko</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>85</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Фриули-Венеция-Джулия</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>friuli_venetsiya_dzhuliya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>86</id>
+			<uf_parent>85</uf_parent>
+			<uf_name>Колли Орьентали Фриули</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kolli_orentali_friuli</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>87</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Пьемонт</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>pemont</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>88</id>
+			<uf_parent>87</uf_parent>
+			<uf_name>Бароло</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>barolo</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>89</id>
+			<uf_parent>87</uf_parent>
+			<uf_name>Барбареско</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>barbaresko</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>90</id>
+			<uf_parent>87</uf_parent>
+			<uf_name>Асти</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>asti</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>91</id>
+			<uf_parent>87</uf_parent>
+			<uf_name>Гави</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>gavi</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>92</id>
+			<uf_parent>83</uf_parent>
+			<uf_name>Вальполичелла</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>valpolichella</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>93</id>
+			<uf_parent>83</uf_parent>
+			<uf_name>Рипассо Вальполичелла</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>ripasso_valpolichella</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>94</id>
+			<uf_parent>83</uf_parent>
+			<uf_name>Верона</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>verona</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>95</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Абруццо</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>abrutstso</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>96</id>
+			<uf_parent>95</uf_parent>
+			<uf_name>Монтепульчано д&apos;Абруццо</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>montepulchano_d_abrutstso</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>97</id>
+			<uf_parent>83</uf_parent>
+			<uf_name>Тревизо</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>trevizo</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>98</id>
+			<uf_parent>83</uf_parent>
+			<uf_name>Просекко ди Конельяно - Вальдобьядене</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>prosekko_di_konelyano_valdobyadene</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>99</id>
+			<uf_parent>83</uf_parent>
+			<uf_name>Венеция</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>venetsiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>100</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Эмилия-Романья</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>emiliya_romanya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>101</id>
+			<uf_parent>100</uf_parent>
+			<uf_name>Рубиконе</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>rubikone</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>102</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Сицилия</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>sitsiliya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>103</id>
+			<uf_parent>87</uf_parent>
+			<uf_name>Роеро</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>roero</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>104</id>
+			<uf_parent>87</uf_parent>
+			<uf_name>Альба</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>alba</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>105</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Молизе</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>molize</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>106</id>
+			<uf_parent>105</uf_parent>
+			<uf_name>Терре дельи Оши</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>terre_deli_oshi</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>107</id>
+			<uf_parent>102</uf_parent>
+			<uf_name>Пассито ди Пантеллерия</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>passito_di_pantelleriya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>108</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Трентино-Альто Адидже</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>trentino_alto_adidzhe</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>109</id>
+			<uf_parent>108</uf_parent>
+			<uf_name>Альто Адидже</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>alto_adidzhe</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>110</id>
+			<uf_parent>108</uf_parent>
+			<uf_name>Тренто</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>trento</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>111</id>
+			<uf_parent>83</uf_parent>
+			<uf_name>Бардолино</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>bardolino</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>112</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Тоскана</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>toskana</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>113</id>
+			<uf_parent>112</uf_parent>
+			<uf_name>Брунелло ди Монтальчино</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>brunello_di_montalchino</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>114</id>
+			<uf_parent>112</uf_parent>
+			<uf_name>Россо ди Монтальчино</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>rosso_di_montalchino</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>115</id>
+			<uf_parent>112</uf_parent>
+			<uf_name>Маремма Тоскана</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>maremma_toskana</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>116</id>
+			<uf_parent>112</uf_parent>
+			<uf_name>Мореллино ди Сканзано</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>morellino_di_skanzano</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>117</id>
+			<uf_parent>83</uf_parent>
+			<uf_name>Соаве</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>soave</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>118</id>
+			<uf_parent>112</uf_parent>
+			<uf_name>Кьянти</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kyanti</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>119</id>
+			<uf_parent>112</uf_parent>
+			<uf_name>Тоскана IGT</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>toskana_igt</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>120</id>
+			<uf_parent>87</uf_parent>
+			<uf_name>Ланге</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>lange</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>121</id>
+			<uf_parent>112</uf_parent>
+			<uf_name>Болгери</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>bolgeri</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>122</id>
+			<uf_parent>102</uf_parent>
+			<uf_name>Менфи</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>menfi</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>123</id>
+			<uf_parent>102</uf_parent>
+			<uf_name>Этна</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>etna</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>124</id>
+			<uf_parent>100</uf_parent>
+			<uf_name>Эмилия</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>emiliya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>125</id>
+			<uf_parent>100</uf_parent>
+			<uf_name>Модена</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>modena</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>126</id>
+			<uf_parent>112</uf_parent>
+			<uf_name>Кьянти Классико</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kyanti_klassiko</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>127</id>
+			<uf_parent>112</uf_parent>
+			<uf_name>Монтепульчано</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>montepulchano</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>128</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Умбрия</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>umbriya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>129</id>
+			<uf_parent>128</uf_parent>
+			<uf_name>Орвието</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>orvieto</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>130</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Ломбардия</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>lombardiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>131</id>
+			<uf_parent>130</uf_parent>
+			<uf_name>Провинция ди Павия</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>provintsiya_di_paviya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>132</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Апулия</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>apuliya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>133</id>
+			<uf_parent>132</uf_parent>
+			<uf_name>Примитиво ди Мандурия</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>primitivo_di_manduriya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>134</id>
+			<uf_parent>132</uf_parent>
+			<uf_name>Саленто</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>salento</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>135</id>
+			<uf_parent>132</uf_parent>
+			<uf_name>Пулья</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>pulya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>136</id>
+			<uf_parent>83</uf_parent>
+			<uf_name>Лугана</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>lugana</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>137</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Сардиния</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>sardiniya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>138</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Фриули</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>friuli</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>139</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Казахстан</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>kazakhstan</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>140</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Ливан</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>livan</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>141</id>
+			<uf_parent>140</uf_parent>
+			<uf_name>Долина Бекаа</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>dolina_bekaa</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>142</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Марокко</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>marokko</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>143</id>
+			<uf_parent>142</uf_parent>
+			<uf_name>Герруан</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>gerruan</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>144</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Мексика</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>meksika</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>145</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Великобритания</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>velikobritaniya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>146</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Новая Зеландия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>novaya_zelandiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>147</id>
+			<uf_parent>146</uf_parent>
+			<uf_name>Мальборо</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>malboro</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>148</id>
+			<uf_parent>146</uf_parent>
+			<uf_name>Вайрарапа</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>vayrarapa</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>149</id>
+			<uf_parent>146</uf_parent>
+			<uf_name>Южный Остров</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>yuzhnyy_ostrov</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>150</id>
+			<uf_parent>149</uf_parent>
+			<uf_name>Нельсон</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>nelson</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>151</id>
+			<uf_parent>18</uf_parent>
+			<uf_name>Дору</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>doru</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>152</id>
+			<uf_parent>48</uf_parent>
+			<uf_name>Дагестан</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>dagestan</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>153</id>
+			<uf_parent>152</uf_parent>
+			<uf_name>Дербент</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>derbent</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>154</id>
+			<uf_parent>48</uf_parent>
+			<uf_name>Москва</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>moskva</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>155</id>
+			<uf_parent>48</uf_parent>
+			<uf_name>Крым</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>krym</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file>0</uf_file>
+		</item>
+		<item>
+			<id>156</id>
+			<uf_parent>155</uf_parent>
+			<uf_name>Севастополь</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>sevastopol</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>157</id>
+			<uf_parent>48</uf_parent>
+			<uf_name>Обнинск</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>obninsk</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>158</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>США</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>ssha</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>159</id>
+			<uf_parent>158</uf_parent>
+			<uf_name>Калифорния</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>kaliforniya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>160</id>
+			<uf_parent>159</uf_parent>
+			<uf_name>Долина Напа</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>dolina_napa</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>161</id>
+			<uf_parent>159</uf_parent>
+			<uf_name>Мантека</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>manteka</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>162</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Уругвай</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>urugvay</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>163</id>
+			<uf_parent>162</uf_parent>
+			<uf_name>Канелонес</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>kanelones</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>164</id>
+			<uf_parent>163</uf_parent>
+			<uf_name>Хуанико</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>khuaniko</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>165</id>
+			<uf_parent>20</uf_parent>
+			<uf_name>Долина Луары</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>dolina_luary</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>166</id>
+			<uf_parent>20</uf_parent>
+			<uf_name>Бордо</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>bordo</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>167</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Сотерн</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>sotern</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>168</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Премьер Кот де Блай</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>premer_kot_de_blay</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>169</id>
+			<uf_parent>20</uf_parent>
+			<uf_name>Лангедок-Руссийон</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>langedok_russiyon</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>170</id>
+			<uf_parent>169</uf_parent>
+			<uf_name>Кот дю Руссийон</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kot_dyu_russiyon</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>171</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>О&apos;Медок</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>o_medok</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>172</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Медок</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>medok</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>173</id>
+			<uf_parent>20</uf_parent>
+			<uf_name>Прованс</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>provans</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>174</id>
+			<uf_parent>173</uf_parent>
+			<uf_name>Кот де Прованс</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kot_de_provans</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>175</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Пессак-Леоньян</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>pessak_leonyan</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>176</id>
+			<uf_parent>169</uf_parent>
+			<uf_name>Минервуа</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>minervua</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>177</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Грав</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>grav</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>178</id>
+			<uf_parent>169</uf_parent>
+			<uf_name>Сен-Шиньян</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>sen_shinyan</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>179</id>
+			<uf_parent>165</uf_parent>
+			<uf_name>Вувре</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>vuvre</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>180</id>
+			<uf_parent>165</uf_parent>
+			<uf_name>Каберне д&apos;Анжу</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kaberne_d_anzhu</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>181</id>
+			<uf_parent>165</uf_parent>
+			<uf_name>Анжу-Сомюр</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>anzhu_somyur</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>182</id>
+			<uf_parent>165</uf_parent>
+			<uf_name>Розе д&apos;Анжу</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>roze_d_anzhu</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>183</id>
+			<uf_parent>27</uf_parent>
+			<uf_name>Кот де Блан</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kot_de_blan</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>184</id>
+			<uf_parent>20</uf_parent>
+			<uf_name>Бургундия</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>burgundiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>185</id>
+			<uf_parent>184</uf_parent>
+			<uf_name>Кот де Бон</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kot_de_bon</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>186</id>
+			<uf_parent>20</uf_parent>
+			<uf_name>Нормандия</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>normandiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>187</id>
+			<uf_parent>186</uf_parent>
+			<uf_name>Кальвадос</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kalvados</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>188</id>
+			<uf_parent>184</uf_parent>
+			<uf_name>Шабли</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>shabli</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>189</id>
+			<uf_parent>184</uf_parent>
+			<uf_name>Божоле</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>bozhole</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>190</id>
+			<uf_parent>20</uf_parent>
+			<uf_name>Юго-запад Франции</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>yugo_zapad_frantsii</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>191</id>
+			<uf_parent>190</uf_parent>
+			<uf_name>Каор</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kaor</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>192</id>
+			<uf_parent>184</uf_parent>
+			<uf_name>Кот де Нюи</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kot_de_nyui</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>193</id>
+			<uf_parent>184</uf_parent>
+			<uf_name>Кот д&apos;Ор</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kot_d_or</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>194</id>
+			<uf_parent>20</uf_parent>
+			<uf_name>Коньяк</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>konyak</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>195</id>
+			<uf_parent>194</uf_parent>
+			<uf_name>Фин Шампань</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>fin_shampan</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>196</id>
+			<uf_parent>194</uf_parent>
+			<uf_name>Фэн Буа</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>fen_bua</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>197</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Сент-Фуа-Бордо</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>sent_fua_bordo</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>198</id>
+			<uf_parent>184</uf_parent>
+			<uf_name>Кот Шалонез</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kot_shalonez</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>199</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Сент-Эмилион</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>sent_emilion</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>200</id>
+			<uf_parent>165</uf_parent>
+			<uf_name>Мюскаде Севр э Мен</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>myuskade_sevr_e_men</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>201</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Марго</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>margo</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>202</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Мулис-ан-Медок</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>mulis_an_medok</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>203</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Сент-Эстеф</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>sent_estef</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>204</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Пойяк</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>poyyak</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>205</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Пессак-Леоньян &amp; Грав</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>pessak_leonyan_grav</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>206</id>
+			<uf_parent>190</uf_parent>
+			<uf_name>Гайак</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>gayak</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>207</id>
+			<uf_parent>184</uf_parent>
+			<uf_name>Маконе</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>makone</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>208</id>
+			<uf_parent>165</uf_parent>
+			<uf_name>Пуйи-Фюме</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>puyi_fyume</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>209</id>
+			<uf_parent>165</uf_parent>
+			<uf_name>Пуйи-Сюр-Луар</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>puyi_syur_luar</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>210</id>
+			<uf_parent>165</uf_parent>
+			<uf_name>Сансер</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>sanser</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>211</id>
+			<uf_parent>20</uf_parent>
+			<uf_name>Долина Роны</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>dolina_rony</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>212</id>
+			<uf_parent>211</uf_parent>
+			<uf_name>Кот-Роти</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kot_roti</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>213</id>
+			<uf_parent>211</uf_parent>
+			<uf_name>Кот-дю-Рон</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kot_dyu_ron</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>214</id>
+			<uf_parent>211</uf_parent>
+			<uf_name>Сен-Жозеф</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>sen_zhozef</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>215</id>
+			<uf_parent>211</uf_parent>
+			<uf_name>Шатонеф-дю-Пап</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>shatonef_dyu_pap</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>216</id>
+			<uf_parent>211</uf_parent>
+			<uf_name>Кот дю Ванту</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kot_dyu_vantu</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>217</id>
+			<uf_parent>211</uf_parent>
+			<uf_name>Эрмитаж</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>ermitazh</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>218</id>
+			<uf_parent>211</uf_parent>
+			<uf_name>Тавель</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>tavel</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>219</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Чили</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>chili</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>220</id>
+			<uf_parent>219</uf_parent>
+			<uf_name>Долина Качапоаль</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>dolina_kachapoal</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>221</id>
+			<uf_parent>219</uf_parent>
+			<uf_name>Регион Аконкагуа</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>region_akonkagua</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>222</id>
+			<uf_parent>219</uf_parent>
+			<uf_name>Центральная Долина</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>tsentralnaya_dolina</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>223</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>ЮАР</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>yuar</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>224</id>
+			<uf_parent>223</uf_parent>
+			<uf_name>Западный Кейп</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>zapadnyy_keyp</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>225</id>
+			<uf_parent>223</uf_parent>
+			<uf_name>Прибрежный регион</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>pribrezhnyy_region</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>226</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Япония</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>yaponiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>227</id>
+			<uf_parent>48</uf_parent>
+			<uf_name>Санкт-Петербург</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>sankt_peterburg</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>228</id>
+			<uf_parent>48</uf_parent>
+			<uf_name>Адыгея</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>adygeya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>229</id>
+			<uf_parent>184</uf_parent>
+			<uf_name>Креман де Бургонь</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kreman_de_burgon</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>230</id>
+			<uf_parent>169</uf_parent>
+			<uf_name>Лиму</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>limu</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>231</id>
+			<uf_parent>130</uf_parent>
+			<uf_name>Франчакорта</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>franchakorta</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>232</id>
+			<uf_parent>130</uf_parent>
+			<uf_name>Ольтрепо Павезе</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>oltrepo_paveze</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>233</id>
+			<uf_parent>85</uf_parent>
+			<uf_name>Фриули Грав</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>friuli_grav</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>234</id>
+			<uf_parent>28</uf_parent>
+			<uf_name>Пфальц</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>pfalts</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>235</id>
+			<uf_parent>59</uf_parent>
+			<uf_name>Рача</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>racha</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>236</id>
+			<uf_parent>235</uf_parent>
+			<uf_name>Хванчкара</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>khvanchkara</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>237</id>
+			<uf_parent>60</uf_parent>
+			<uf_name>Ахашени</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>akhasheni</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>238</id>
+			<uf_parent>59</uf_parent>
+			<uf_name>Лечхуми</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>lechkhumi</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>239</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Азербайджан</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>azerbaydzhan</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>240</id>
+			<uf_parent>35</uf_parent>
+			<uf_name>Бургенланд</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>burgenland</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>241</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Чехия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>chekhiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>242</id>
+			<uf_parent>241</uf_parent>
+			<uf_name>Моравия</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>moraviya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>243</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Тунис</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>tunis</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>244</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Венгрия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>vengriya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>245</id>
+			<uf_parent>190</uf_parent>
+			<uf_name>Гасконь</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>gaskon</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>246</id>
+			<uf_parent>20</uf_parent>
+			<uf_name>Эльзас</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>elzas</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>247</id>
+			<uf_parent>246</uf_parent>
+			<uf_name>Бергхайм</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>bergkhaym</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>248</id>
+			<uf_parent>184</uf_parent>
+			<uf_name>О-Кот де Нюи</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>o_kot_de_nyui</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>249</id>
+			<uf_parent>184</uf_parent>
+			<uf_name>О-Кот де Бон</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>o_kot_de_bon</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>250</id>
+			<uf_parent>184</uf_parent>
+			<uf_name>Пулиньи-Монраше</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>pulini_monrashe</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>251</id>
+			<uf_parent>184</uf_parent>
+			<uf_name>Шассань-Монраше</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>shassan_monrashe</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>252</id>
+			<uf_parent>165</uf_parent>
+			<uf_name>Сомюр</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>somyur</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>253</id>
+			<uf_parent>20</uf_parent>
+			<uf_name>Корсика</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>korsika</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>254</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Антр-Де-Мер</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>antr_de_mer</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>255</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Помроль</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>pomrol</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>256</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Сен-Жюльен</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>sen_zhyulen</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>257</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Бордо Сюпериёр</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>bordo_syuperiyer</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>258</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Монтань Сент Эмильон</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>montan_sent_emilon</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>259</id>
+			<uf_parent>211</uf_parent>
+			<uf_name>Кот дю Люберон</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kot_dyu_lyuberon</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>260</id>
+			<uf_parent>211</uf_parent>
+			<uf_name>Кондриё</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kondriye</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>261</id>
+			<uf_parent>211</uf_parent>
+			<uf_name>Кроз-Эрмитаж</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kroz_ermitazh</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>262</id>
+			<uf_parent>211</uf_parent>
+			<uf_name>Жигондас</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>zhigondas</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>263</id>
+			<uf_parent>85</uf_parent>
+			<uf_name>Венеция Джулия</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>venetsiya_dzhuliya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>264</id>
+			<uf_parent>85</uf_parent>
+			<uf_name>Коллио</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kollio</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>265</id>
+			<uf_parent>128</uf_parent>
+			<uf_name>Торжано</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>torzhano</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>266</id>
+			<uf_parent>128</uf_parent>
+			<uf_name>Умбрия IGT</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>umbriya_igt</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>267</id>
+			<uf_parent>128</uf_parent>
+			<uf_name>Монтефалько Сагрантино</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>montefalko_sagrantino</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>268</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Валле д&apos;Аоста</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>valle_d_aosta</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>269</id>
+			<uf_parent>108</uf_parent>
+			<uf_name>Виньети делле Доломити (Вайнберг Доломитен)</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>vineti_delle_dolomiti_vaynberg_dolomiten</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>270</id>
+			<uf_parent>112</uf_parent>
+			<uf_name>Нобиле ди Монтепульчано</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>nobile_di_montepulchano</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>271</id>
+			<uf_parent>112</uf_parent>
+			<uf_name>Сан-Джиминьяно</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>san_dzhiminyano</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>272</id>
+			<uf_parent>112</uf_parent>
+			<uf_name>Болгери и побережье</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>bolgeri_i_poberezhe</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>273</id>
+			<uf_parent>137</uf_parent>
+			<uf_name>Изола дей Нураги</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>izola_dey_nuragi</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>274</id>
+			<uf_parent>137</uf_parent>
+			<uf_name>Каннонау ди Сардиния</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kannonau_di_sardiniya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>275</id>
+			<uf_parent>137</uf_parent>
+			<uf_name>Верментино ди Сардиния</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>vermentino_di_sardiniya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>276</id>
+			<uf_parent>222</uf_parent>
+			<uf_name>Кольчагуа</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kolchagua</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>277</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Сарагоса</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>saragosa</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>278</id>
+			<uf_parent>277</uf_parent>
+			<uf_name>Кариньена</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>karinena</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>279</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Арагон</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>aragon</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>280</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Галисия</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>galisiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>281</id>
+			<uf_parent>68</uf_parent>
+			<uf_name>Сигал</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>sigal</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>282</id>
+			<uf_parent>81</uf_parent>
+			<uf_name>Риоха Алавеса</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>riokha_alavesa</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>283</id>
+			<uf_parent>81</uf_parent>
+			<uf_name>Риоха Альта</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>riokha_alta</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>284</id>
+			<uf_parent>280</uf_parent>
+			<uf_name>Риас Байшас</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>rias_bayshas</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>285</id>
+			<uf_parent>18</uf_parent>
+			<uf_name>Алентежу</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>alentezhu</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>286</id>
+			<uf_parent>285</uf_parent>
+			<uf_name>Сетубал</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>setubal</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>287</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Израиль</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>izrail</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>288</id>
+			<uf_parent>287</uf_parent>
+			<uf_name>Верхняя Галилея</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>verkhnyaya_galileya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>289</id>
+			<uf_parent>287</uf_parent>
+			<uf_name>Галилея</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>galileya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>290</id>
+			<uf_parent>287</uf_parent>
+			<uf_name>Иудейские Холмы</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>iudeyskie_kholmy</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>291</id>
+			<uf_parent>159</uf_parent>
+			<uf_name>Сонома Кост</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>sonoma_kost</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>292</id>
+			<uf_parent>159</uf_parent>
+			<uf_name>Долина Русской реки</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>dolina_russkoy_reki</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>293</id>
+			<uf_parent>159</uf_parent>
+			<uf_name>Сонома Кантри</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>sonoma_kantri</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>294</id>
+			<uf_parent>159</uf_parent>
+			<uf_name>Карнерос</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>karneros</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>295</id>
+			<uf_parent>41</uf_parent>
+			<uf_name>Патагония</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>patagoniya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>296</id>
+			<uf_parent>158</uf_parent>
+			<uf_name>Орегон</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>oregon</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>297</id>
+			<uf_parent>296</uf_parent>
+			<uf_name>Данди Хилз</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>dandi_khilz</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>298</id>
+			<uf_parent>159</uf_parent>
+			<uf_name>Центральное побережье</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>tsentralnoe_poberezhe</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>299</id>
+			<uf_parent>159</uf_parent>
+			<uf_name>Монтерей</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>monterey</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>300</id>
+			<uf_parent>222</uf_parent>
+			<uf_name>Долина Маипо</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>dolina_maipo</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>301</id>
+			<uf_parent>221</uf_parent>
+			<uf_name>Долина Лейда</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>dolina_leyda</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>302</id>
+			<uf_parent>42</uf_parent>
+			<uf_name>Лухан де Куйо</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>lukhan_de_kuyo</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>303</id>
+			<uf_parent>223</uf_parent>
+			<uf_name>Паарл</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>paarl</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>304</id>
+			<uf_parent>303</uf_parent>
+			<uf_name>Франшхук</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>franshkhuk</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>305</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Литва</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>litva</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>306</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Сербия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>serbiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>307</id>
+			<uf_parent>30</uf_parent>
+			<uf_name>Виктория</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>viktoriya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>308</id>
+			<uf_parent>307</uf_parent>
+			<uf_name>Пиренеи</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>pirenei</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>309</id>
+			<uf_parent>307</uf_parent>
+			<uf_name>Хиткоут</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>khitkout</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>310</id>
+			<uf_parent>307</uf_parent>
+			<uf_name>Бичворз</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>bichvorz</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>311</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Андалусия</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>andalusiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>312</id>
+			<uf_parent>311</uf_parent>
+			<uf_name>Херес</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kheres</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>313</id>
+			<uf_parent>18</uf_parent>
+			<uf_name>Мадейра</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>madeyra</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>314</id>
+			<uf_parent>226</uf_parent>
+			<uf_name>Осака</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>osaka</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>315</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Страна Басков</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>strana_baskov</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>316</id>
+			<uf_parent>194</uf_parent>
+			<uf_name>Гранд Шампань</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>grand_shampan</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>317</id>
+			<uf_parent>28</uf_parent>
+			<uf_name>Бавария</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>bavariya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>318</id>
+			<uf_parent>22</uf_parent>
+			<uf_name>Хайленд (Высокогорье)</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>khaylend_vysokogore</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>319</id>
+			<uf_parent>22</uf_parent>
+			<uf_name>Айла</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>ayla</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>320</id>
+			<uf_parent>226</uf_parent>
+			<uf_name>Хонсю</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>khonsyu</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>321</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Болгария</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>bolgariya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>322</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Перу</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>peru</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>323</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Нидерланды</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>niderlandy</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>324</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Хорватия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>khorvatiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>325</id>
+			<uf_parent>226</uf_parent>
+			<uf_name>Хоккайдо</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>khokkaydo</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>326</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Куба</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>kuba</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>327</id>
+			<uf_parent>22</uf_parent>
+			<uf_name>Абердиншир</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>aberdinshir</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>328</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Милан</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>milan</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>329</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Сейшелы</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>seyshely</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>330</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Словакия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>slovakiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>331</id>
+			<uf_parent>100</uf_parent>
+			<uf_name>Треббьяно ди Романья</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>trebbyano_di_romanya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>332</id>
+			<uf_parent>22</uf_parent>
+			<uf_name>Кэмпбелтаун</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>kempbeltaun</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>333</id>
+			<uf_parent>22</uf_parent>
+			<uf_name>Лоуленд (Равнина)</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>loulend_ravnina</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>334</id>
+			<uf_parent>66</uf_parent>
+			<uf_name>Графство Антрим</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>grafstvo_antrim</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>335</id>
+			<uf_parent>158</uf_parent>
+			<uf_name>Кентукки</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>kentukki</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>336</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Латвия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>latviya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>337</id>
+			<uf_parent>318</uf_parent>
+			<uf_name>Западное Высокогорье</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>zapadnoe_vysokogore</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>338</id>
+			<uf_parent>323</uf_parent>
+			<uf_name>Амстердам</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>amsterdam</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>339</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Венесуэла</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>venesuela</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>340</id>
+			<uf_parent>244</uf_parent>
+			<uf_name>Токай</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>tokay</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>341</id>
+			<uf_parent>28</uf_parent>
+			<uf_name>Наэ</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>nae</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>342</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Швейцария</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>shveytsariya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>343</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Эстремадура</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>estremadura</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>344</id>
+			<uf_parent>146</uf_parent>
+			<uf_name>Мартинборо</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>martinboro</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>345</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Наварра</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>navarra</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>346</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Валенсия</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>valensiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>347</id>
+			<uf_parent>346</uf_parent>
+			<uf_name>Аликанте</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>alikante</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>348</id>
+			<uf_parent>78</uf_parent>
+			<uf_name>Йекла</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>yekla</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>349</id>
+			<uf_parent>74</uf_parent>
+			<uf_name>Альманса</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>almansa</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>350</id>
+			<uf_parent>346</uf_parent>
+			<uf_name>Утель-Рекена</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>utel_rekena</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>351</id>
+			<uf_parent>279</uf_parent>
+			<uf_name>Калатаюд</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kalatayud</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>352</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Манчуэла</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>manchuela</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>353</id>
+			<uf_parent>100</uf_parent>
+			<uf_name>Албана ди Романья</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>albana_di_romanya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>354</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Торо</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>toro</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>355</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Марке</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>marke</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>356</id>
+			<uf_parent>95</uf_parent>
+			<uf_name>Монтепульчано д&apos;Абруццо Коллине Терамане</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>montepulchano_d_abrutstso_kolline_teramane</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>357</id>
+			<uf_parent>95</uf_parent>
+			<uf_name>Монтепульчано д&apos;Абруццо Черасуоло</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>montepulchano_d_abrutstso_cherasuolo</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>358</id>
+			<uf_parent>87</uf_parent>
+			<uf_name>Монферрато</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>monferrato</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>359</id>
+			<uf_parent>83</uf_parent>
+			<uf_name>Бьянко ди Кустоза</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>byanko_di_kustoza</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>360</id>
+			<uf_parent>132</uf_parent>
+			<uf_name>Саличе Салентино</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>saliche_salentino</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>361</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Кампания</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>kampaniya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>362</id>
+			<uf_parent>361</uf_parent>
+			<uf_name>Греко ди Туффо</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>greko_di_tuffo</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>363</id>
+			<uf_parent>361</uf_parent>
+			<uf_name>Таурази</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>taurazi</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>364</id>
+			<uf_parent>361</uf_parent>
+			<uf_name>Фиано ди Авеллино</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>fiano_di_avellino</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>365</id>
+			<uf_parent>100</uf_parent>
+			<uf_name>Реджано</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>redzhano</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>366</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Кипр</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>kipr</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>367</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Молдавия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>moldaviya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>368</id>
+			<uf_parent>18</uf_parent>
+			<uf_name>Лиссабон</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>lissabon</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>369</id>
+			<uf_parent>18</uf_parent>
+			<uf_name>Буселаш</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>buselash</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>370</id>
+			<uf_parent>18</uf_parent>
+			<uf_name>Дао</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>dao</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>371</id>
+			<uf_parent>151</uf_parent>
+			<uf_name>Вила-Нова-де-Гайе</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>vila_nova_de_gaye</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>372</id>
+			<uf_parent>18</uf_parent>
+			<uf_name>Бейраш</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>beyrash</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>373</id>
+			<uf_parent>155</uf_parent>
+			<uf_name>Феодосия</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>feodosiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>374</id>
+			<uf_parent>48</uf_parent>
+			<uf_name>Ленинградская область</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>leningradskaya_oblast</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>375</id>
+			<uf_parent>49</uf_parent>
+			<uf_name>Крымск</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>krymsk</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>376</id>
+			<uf_parent>49</uf_parent>
+			<uf_name>Гай-Кодзор</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>gay_kodzor</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>377</id>
+			<uf_parent>211</uf_parent>
+			<uf_name>Костьер де Ним</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>koster_de_nim</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>378</id>
+			<uf_parent>155</uf_parent>
+			<uf_name>Евпатория</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>evpatoriya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>379</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Барбадос</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>barbados</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>380</id>
+			<uf_parent>21</uf_parent>
+			<uf_name>Ба-Арманьяк</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>ba_armanyak</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>381</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Кот де Бордо</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kot_de_bordo</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>382</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Лаланд-де-Помроль</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>laland_de_pomrol</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>383</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Пюисген Сент-Эмильон</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>pyuisgen_sent_emilon</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>384</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Кот де Бур</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kot_de_bur</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>385</id>
+			<uf_parent>169</uf_parent>
+			<uf_name>Фиту</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>fitu</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>386</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Премьер Кот де Бордо</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>premer_kot_de_bordo</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>387</id>
+			<uf_parent>194</uf_parent>
+			<uf_name>Пти Шампань</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>pti_shampan</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>388</id>
+			<uf_parent>324</uf_parent>
+			<uf_name>Далматинское побережье</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>dalmatinskoe_poberezhe</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>389</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Черногория</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>chernogoriya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>390</id>
+			<uf_parent>222</uf_parent>
+			<uf_name>Долина Курико</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>dolina_kuriko</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>391</id>
+			<uf_parent>222</uf_parent>
+			<uf_name>Долина Мауле</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>dolina_maule</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>392</id>
+			<uf_parent>224</uf_parent>
+			<uf_name>Долина Робертсон</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>dolina_robertson</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>393</id>
+			<uf_parent>223</uf_parent>
+			<uf_name>Свартланд</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>svartland</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>394</id>
+			<uf_parent>28</uf_parent>
+			<uf_name>Баден</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>baden</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>395</id>
+			<uf_parent>31</uf_parent>
+			<uf_name>Долина Макларен</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>dolina_maklaren</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>396</id>
+			<uf_parent>37</uf_parent>
+			<uf_name>Вахау</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>vakhau</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>397</id>
+			<uf_parent>35</uf_parent>
+			<uf_name>Вена</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>vena</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>398</id>
+			<uf_parent>280</uf_parent>
+			<uf_name>Вальдеоррас</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>valdeorras</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>399</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Бьерсо</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>berso</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>400</id>
+			<uf_parent>68</uf_parent>
+			<uf_name>Сардон-де-Дуэро</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>sardon_de_duero</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>401</id>
+			<uf_parent>25</uf_parent>
+			<uf_name>Монсант</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>monsant</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>402</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Винос де Мадрид</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>vinos_de_madrid</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>403</id>
+			<uf_parent>361</uf_parent>
+			<uf_name>Саннио</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>sannio</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>404</id>
+			<uf_parent>361</uf_parent>
+			<uf_name>Саннио Фалангина</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>sannio_falangina</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>405</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Лигурия</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>liguriya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>406</id>
+			<uf_parent>130</uf_parent>
+			<uf_name>Вальтеллина Супериоре</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>valtellina_superiore</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>407</id>
+			<uf_parent>355</uf_parent>
+			<uf_name>Вердиккио дей Кастелли ди Йези</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>verdikkio_dey_kastelli_di_yezi</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>408</id>
+			<uf_parent>112</uf_parent>
+			<uf_name>Альта Валле делла Греве</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>alta_valle_della_greve</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>409</id>
+			<uf_parent>158</uf_parent>
+			<uf_name>Вашингтон</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>vashington</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>410</id>
+			<uf_parent>409</uf_parent>
+			<uf_name>Долина Коламбия</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>dolina_kolambiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>411</id>
+			<uf_parent>221</uf_parent>
+			<uf_name>Долина Касабланка</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>dolina_kasablanka</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>412</id>
+			<uf_parent>211</uf_parent>
+			<uf_name>Вакейрас</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>vakeyras</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>413</id>
+			<uf_parent>184</uf_parent>
+			<uf_name>Юра</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>yura</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>414</id>
+			<uf_parent>169</uf_parent>
+			<uf_name>Кото дю Лангедок</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>koto_dyu_langedok</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>415</id>
+			<uf_parent>169</uf_parent>
+			<uf_name>Вэн де Пэи де Кот Каталан</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>ven_de_pei_de_kot_katalan</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>416</id>
+			<uf_parent>165</uf_parent>
+			<uf_name>Турень</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>turen</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>417</id>
+			<uf_parent>165</uf_parent>
+			<uf_name>Шинон</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>shinon</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>418</id>
+			<uf_parent>21</uf_parent>
+			<uf_name>Кот де Гасконь</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kot_de_gaskon</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>419</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Фронсак</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>fronsak</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>420</id>
+			<uf_parent>184</uf_parent>
+			<uf_name>Марсанне</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>marsanne</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>421</id>
+			<uf_parent>224</uf_parent>
+			<uf_name>Дарлинг</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>darling</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>422</id>
+			<uf_parent>186</uf_parent>
+			<uf_name>Пэи д&apos;Ож</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>pei_d_ozh</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>423</id>
+			<uf_parent>18</uf_parent>
+			<uf_name>Порту</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>portu</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>424</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Кот де Кастийон</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kot_de_kastiyon</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>425</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Кадияк и Премьер Кот де Бордо</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kadiyak_i_premer_kot_de_bordo</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>426</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Мулис</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>mulis</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>427</id>
+			<uf_parent>184</uf_parent>
+			<uf_name>Пти Шабли</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>pti_shabli</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>428</id>
+			<uf_parent>211</uf_parent>
+			<uf_name>Корнас</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kornas</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>429</id>
+			<uf_parent>173</uf_parent>
+			<uf_name>Бандоль</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>bandol</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>430</id>
+			<uf_parent>37</uf_parent>
+			<uf_name>Вайнфиртель</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>vaynfirtel</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>431</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Румыния</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>rumyniya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>432</id>
+			<uf_parent>431</uf_parent>
+			<uf_name>Трансильвания</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>transilvaniya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>433</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Люксембург</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>lyuksemburg</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>434</id>
+			<uf_parent>112</uf_parent>
+			<uf_name>Сант&apos;Антимо</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>sant_antimo</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>435</id>
+			<uf_parent>112</uf_parent>
+			<uf_name>Монтальчино</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>montalchino</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>436</id>
+			<uf_parent>83</uf_parent>
+			<uf_name>Веронезе</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>veroneze</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>437</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Виченца</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>vichentsa</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>438</id>
+			<uf_parent>361</uf_parent>
+			<uf_name>Ирпиния</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>irpiniya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>439</id>
+			<uf_parent>361</uf_parent>
+			<uf_name>Колли ди Салерно</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kolli_di_salerno</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>440</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Калабрия</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>kalabriya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>441</id>
+			<uf_parent>440</uf_parent>
+			<uf_name>Чиро</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>chiro</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>442</id>
+			<uf_parent>130</uf_parent>
+			<uf_name>Сфурсат ди Вальтеллина</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>sfursat_di_valtellina</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>443</id>
+			<uf_parent>30</uf_parent>
+			<uf_name>Юго-Восточная Австралия</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>yugo_vostochnaya_avstraliya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>444</id>
+			<uf_parent>31</uf_parent>
+			<uf_name>Аделаида Хиллз</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>adelaida_khillz</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>445</id>
+			<uf_parent>33</uf_parent>
+			<uf_name>Долина Хантер</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>dolina_khanter</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>446</id>
+			<uf_parent>146</uf_parent>
+			<uf_name>Северный остров</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>severnyy_ostrov</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>447</id>
+			<uf_parent>224</uf_parent>
+			<uf_name>Стелленбош</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>stellenbosh</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>448</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Тринидад и Тобаго</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>trinidad_i_tobago</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>449</id>
+			<uf_parent>37</uf_parent>
+			<uf_name>Терменрегион</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>termenregion</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>450</id>
+			<uf_parent>42</uf_parent>
+			<uf_name>Долина Тупунгато</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>dolina_tupungato</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>451</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Бельгия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>belgiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>452</id>
+			<uf_parent>22</uf_parent>
+			<uf_name>Спейсайд</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>speysayd</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>453</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Англия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>angliya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>454</id>
+			<uf_parent>145</uf_parent>
+			<uf_name>Лондон</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>london</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>455</id>
+			<uf_parent>59</uf_parent>
+			<uf_name>Картли</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>kartli</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>456</id>
+			<uf_parent>60</uf_parent>
+			<uf_name>Кварели</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kvareli</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>457</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Индия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>indiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>458</id>
+			<uf_parent>279</uf_parent>
+			<uf_name>Сомонтано</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>somontano</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>459</id>
+			<uf_parent>74</uf_parent>
+			<uf_name>Рибера дель Хука</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>ribera_del_khuka</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>460</id>
+			<uf_parent>25</uf_parent>
+			<uf_name>Таррагона</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>tarragona</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>461</id>
+			<uf_parent>100</uf_parent>
+			<uf_name>Санджовезе ди Романья</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>sandzhoveze_di_romanya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>462</id>
+			<uf_parent>102</uf_parent>
+			<uf_name>Марсала</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>marsala</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>463</id>
+			<uf_parent>87</uf_parent>
+			<uf_name>Альтавилла-Монферрато</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>altavilla_monferrato</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>464</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Южная Корея</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>yuzhnaya_koreya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>465</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Никарагуа</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>nikaragua</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>466</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Польша</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>polsha</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>467</id>
+			<uf_parent>155</uf_parent>
+			<uf_name>Ялта</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>yalta</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>468</id>
+			<uf_parent>48</uf_parent>
+			<uf_name>Северная Осетия — Алания</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>severnaya_osetiya_alaniya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>469</id>
+			<uf_parent>335</uf_parent>
+			<uf_name>Вудфорд</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>vudford</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>470</id>
+			<uf_parent>190</uf_parent>
+			<uf_name>Жюрансон</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>zhyuranson</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>471</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Барсак</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>barsak</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>472</id>
+			<uf_parent>222</uf_parent>
+			<uf_name>Долина Рапель</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>dolina_rapel</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>473</id>
+			<uf_parent>219</uf_parent>
+			<uf_name>Сан Антонио</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>san_antonio</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>474</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Швеция</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>shvetsiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>475</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Эстония</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>estoniya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>476</id>
+			<uf_parent>83</uf_parent>
+			<uf_name>Колли Тревиньяни</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kolli_trevinyani</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>477</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Кот де Блай</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kot_de_blay</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>478</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Бордо Кот де Фран</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>bordo_kot_de_fran</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>479</id>
+			<uf_parent>25</uf_parent>
+			<uf_name>Эмпурда</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>empurda</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>480</id>
+			<uf_parent>83</uf_parent>
+			<uf_name>Речото ди Соаве</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>rechoto_di_soave</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>481</id>
+			<uf_parent>83</uf_parent>
+			<uf_name>Колли Беричи</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kolli_berichi</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>482</id>
+			<uf_parent>112</uf_parent>
+			<uf_name>Кьянти Колли Фьорентини</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kyanti_kolli_forentini</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>483</id>
+			<uf_parent>112</uf_parent>
+			<uf_name>Карминьяно</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>karminyano</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>484</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Словения</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>sloveniya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>485</id>
+			<uf_parent>41</uf_parent>
+			<uf_name>Долина Кальчаки</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>dolina_kalchaki</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>486</id>
+			<uf_parent>41</uf_parent>
+			<uf_name>Сальта</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>salta</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>487</id>
+			<uf_parent>219</uf_parent>
+			<uf_name>Кокимбо</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>kokimbo</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>488</id>
+			<uf_parent>487</uf_parent>
+			<uf_name>Долина Эльки</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>dolina_elki</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>489</id>
+			<uf_parent>33</uf_parent>
+			<uf_name>Риверина</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>riverina</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>490</id>
+			<uf_parent>146</uf_parent>
+			<uf_name>Отаго</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>otago</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>491</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Китай</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>kitay</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>492</id>
+			<uf_parent>491</uf_parent>
+			<uf_name>Шанхай</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>shankhay</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>493</id>
+			<uf_parent>22</uf_parent>
+			<uf_name>Эдинбург</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>edinburg</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>494</id>
+			<uf_parent>194</uf_parent>
+			<uf_name>Фин Пти Шампань</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>fin_pti_shampan</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>495</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Маврикий</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>mavrikiy</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>496</id>
+			<uf_parent>190</uf_parent>
+			<uf_name>Мадиран</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>madiran</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>497</id>
+			<uf_parent>166</uf_parent>
+			<uf_name>Люссак Сент Эмильон</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>lyussak_sent_emilon</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>498</id>
+			<uf_parent>108</uf_parent>
+			<uf_name>Кампо Роталиано</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kampo_rotaliano</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>499</id>
+			<uf_parent>85</uf_parent>
+			<uf_name>Фриули Исонцо</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>friuli_isontso</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>500</id>
+			<uf_parent>112</uf_parent>
+			<uf_name>Колли делла Тоскана централе</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kolli_della_toskana_tsentrale</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>501</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Лацио</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>latsio</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>502</id>
+			<uf_parent>501</uf_parent>
+			<uf_name>Фраскати</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>fraskati</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>503</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Мадрид</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>madrid</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>504</id>
+			<uf_parent>24</uf_parent>
+			<uf_name>Майорка</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>mayorka</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>505</id>
+			<uf_parent>28</uf_parent>
+			<uf_name>Ар</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>ar</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>506</id>
+			<uf_parent>244</uf_parent>
+			<uf_name>Виллань</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>villan</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>507</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Турция</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>turtsiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>508</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Сирия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>siriya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>509</id>
+			<uf_parent>307</uf_parent>
+			<uf_name>Джилонг</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>dzhilong</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>510</id>
+			<uf_parent>30</uf_parent>
+			<uf_name>Западная Австралия</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>zapadnaya_avstraliya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>511</id>
+			<uf_parent>510</uf_parent>
+			<uf_name>Франкленд Ривер</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>franklend_river</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>512</id>
+			<uf_parent>30</uf_parent>
+			<uf_name>Тасмания</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>tasmaniya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>513</id>
+			<uf_parent>146</uf_parent>
+			<uf_name>Хокс Бей</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>khoks_bey</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>514</id>
+			<uf_parent>42</uf_parent>
+			<uf_name>Майпу</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>maypu</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>515</id>
+			<uf_parent>194</uf_parent>
+			<uf_name>Гран Фин Шампань</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>gran_fin_shampan</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>516</id>
+			<uf_parent>22</uf_parent>
+			<uf_name>Остров Скай</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>ostrov_skay</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>517</id>
+			<uf_parent>453</uf_parent>
+			<uf_name>Норфолк</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>norfolk</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>518</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Норвегия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>norvegiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>519</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Дания</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>daniya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>520</id>
+			<uf_parent>48</uf_parent>
+			<uf_name>Ставропольский край</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>stavropolskiy_kray</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>521</id>
+			<uf_parent>520</uf_parent>
+			<uf_name>Прасковея</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>praskoveya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>522</id>
+			<uf_parent>52</uf_parent>
+			<uf_name>Демерара</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>demerara</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>523</id>
+			<uf_parent>144</uf_parent>
+			<uf_name>Халиско</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>khalisko</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>524</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Саронно</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>saronno</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>525</id>
+			<uf_parent>326</uf_parent>
+			<uf_name>Гавана</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>gavana</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>526</id>
+			<uf_parent>82</uf_parent>
+			<uf_name>Римини</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>rimini</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>527</id>
+			<uf_parent>144</uf_parent>
+			<uf_name>Оахака</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>oakhaka</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>528</id>
+			<uf_parent>158</uf_parent>
+			<uf_name>Луизиана</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>luiziana</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>529</id>
+			<uf_parent>437</uf_parent>
+			<uf_name>Асиаго</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>asiago</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>530</id>
+			<uf_parent>20</uf_parent>
+			<uf_name>Бурж</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>burzh</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>531</id>
+			<uf_parent>48</uf_parent>
+			<uf_name>Ивановская область</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>ivanovskaya_oblast</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>532</id>
+			<uf_parent>519</uf_parent>
+			<uf_name>Копенгаген</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>kopengagen</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>533</id>
+			<uf_parent>22</uf_parent>
+			<uf_name>Глазго</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>glazgo</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>534</id>
+			<uf_parent>219</uf_parent>
+			<uf_name>Долина Лимари</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>dolina_limari</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>535</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Исландия</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>islandiya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>536</id>
+			<uf_parent>48</uf_parent>
+			<uf_name>Тула</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>tula</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>537</id>
+			<uf_parent>367</uf_parent>
+			<uf_name>Вулканешты</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>vulkaneshty</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>538</id>
+			<uf_parent>173</uf_parent>
+			<uf_name>Воклюз</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>voklyuz</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>539</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Украина</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>ukraina</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>540</id>
+			<uf_parent>539</uf_parent>
+			<uf_name>Одесская область</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>odesskaya_oblast</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>541</id>
+			<uf_parent>56</uf_parent>
+			<uf_name>Овче Поле</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>ovche_pole</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>542</id>
+			<uf_parent>279</uf_parent>
+			<uf_name>Кампо-де-Кариньена</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>kampo_de_karinena</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>543</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Ямайка</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>yamayka</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>544</id>
+			<uf_parent>20</uf_parent>
+			<uf_name>Савойя</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>savoyya</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>545</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Канада</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>kanada</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>546</id>
+			<uf_parent>545</uf_parent>
+			<uf_name>Онтарио</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>ontario</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>547</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Сингапур</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>singapur</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>548</id>
+			<uf_parent>0</uf_parent>
+			<uf_name>Гватемала</uf_name>
+			<uf_sort>100</uf_sort>
+			<uf_xml_id>gvatemala</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>549</id>
+			<uf_parent>219</uf_parent>
+			<uf_name>Южный Регион</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>yuzhnyy_region</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>550</id>
+			<uf_parent>31</uf_parent>
+			<uf_name>Долина Клер</uf_name>
+			<uf_sort>300</uf_sort>
+			<uf_xml_id>dolina_kler</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>551</id>
+			<uf_parent>48</uf_parent>
+			<uf_name>Пенза</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>penza</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>552</id>
+			<uf_parent>48</uf_parent>
+			<uf_name>Раменское</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>ramenskoe</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>553</id>
+			<uf_parent>48</uf_parent>
+			<uf_name>Московская область</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>moskovskaya_oblast</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+		<item>
+			<id>554</id>
+			<uf_parent>48</uf_parent>
+			<uf_name>Нижегородская область</uf_name>
+			<uf_sort>200</uf_sort>
+			<uf_xml_id>nizhegorodskaya_oblast</uf_xml_id>
+			<uf_link />
+			<uf_description />
+			<uf_full_description />
+			<uf_def>0</uf_def>
+			<uf_file />
+		</item>
+	</items>
+</hiblock>
