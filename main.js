@@ -8,8 +8,9 @@ const map = new mapboxgl.Map({
     style: "mapbox://styles/mapbox/dark-v10",
 
     // style: "mapbox://styles/hookahlocator/clsumxbp8002g01pihdv4290g",
-    center: [2.2932, 48.86069], // starting position [lng, lat]
-    zoom: 15.1, // starting zoom
+    center: [-9.1963944,
+        38.4093151], // starting position [lng, lat]
+    zoom: 4.1, // starting zoom
     // pitch: 62, // starting pitch
     // bearing: -20 // starting bearing,
     //            maxBounds: bounds
