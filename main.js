@@ -1,3 +1,5 @@
+// import {getCountryOSMID} from './overpass.js'
+
 mapboxgl.accessToken = 'pk.eyJ1IjoiaG9va2FobG9jYXRvciIsImEiOiI5WnJEQTBBIn0.DrAlI7fhFaYr2RcrWWocgw';
 
 const map = new mapboxgl.Map({
@@ -33,21 +35,84 @@ map.on('style.load', () => {
 
 let color = d3.scaleOrdinal(d3.schemeTableau10)
 
-async function loadData() {
-    let response = await fetch('./test4.geojson')
+async function loadData(filename) {
+    let response = await fetch(filename)
     let data = await response.json()
 
     return data
 }
 
-loadData().then(data => {
+loadData('./result5.json').then(data => {
+        let features = data.map((item, i) => {
+            
+            let feature = turf.multiPolygon(item.geojson.coordinates)
+            feature.properties['id'] = i;
+            feature.properties['color'] = color(i)
 
-    let features = data.features.map((feature, i) => {
-        // feature.properties.admin_level == '6'
-        feature.properties['id'] = i;
-        feature.properties['color'] = color(feature.properties.id)
-        return feature
+            return feature
+        })
+
+        const polygons = {
+            type: 'FeatureCollection',
+            features: features
+        }
+
+        map.addSource('admin-2-countries', {
+            type: 'geojson',
+            data: polygons,
+            generateId: true
+        })
+
+        map.addLayer({
+            id: 'admin-2-fill-country',
+            type: 'fill',
+            source: 'admin-2-countries',
+            // filter: ['==', ['get', 'admin_level'], 6],
+            paint: {
+                'fill-color': ['get', 'color'],
+                'fill-opacity': [
+                    'case',
+                    ['boolean', ['feature-state', 'hover'], false],
+                    0.6,
+                    0.3
+                ]
+            }
+        })
+
+})
+
+loadData('./result6.json').then(data => {
+
+    console.log(data)
+    
+    let features = []
+
+    data.forEach((item, i) => {
+        if (item != null) {
+            // let feature = turf.multiPolygon(item.coordinates)
+            let feature = item
+            feature.properties['id'] = i;
+            feature.properties['color'] = color(i)
+    
+            features.push(feature)
+        } 
     })
+
+
+    // let features = data.map((item, i) => {
+    //     let feature = turf.multiPolygon(item.geojson.coordinates)
+    //     feature.properties['id'] = i;
+    //     feature.properties['color'] = color(i)
+
+    //     return feature
+    // })
+
+    // let features = data.features.map((feature, i) => {
+    //     // feature.properties.admin_level == '6'
+    //     feature.properties['id'] = i;
+    //     feature.properties['color'] = color(i)
+    //     return feature
+    // })
 
     // let feature = data.features.filter(feature => feature.properties.admin_level == 4)
 
@@ -68,7 +133,7 @@ loadData().then(data => {
         id: 'admin-2-fill',
         type: 'fill',
         source: 'admin-2',
-        filter: ['==', ['get', 'admin_level'], 6],
+        // filter: ['==', ['get', 'admin_level'], 6],
         paint: {
             'fill-color': ['get', 'color'],
             'fill-opacity': [
@@ -82,3 +147,48 @@ loadData().then(data => {
 
 
 })
+
+
+// // Example usage
+// const countryName = 'Germany';
+// getCountryOSMID(countryName)
+//     .then(geojson => {
+//         if (geojson) {
+//             console.log(`The geojson for ${countryName} is:`, geojson);
+
+//             const feature = turf.multiPolygon(geojson.coordinates)
+
+//             const polygons = {
+//                 type: 'FeatureCollection',
+//                 features: feature
+//             }
+
+//             console.log(polygons)
+
+//             map.addSource('admin-2-germany', {
+//                 type: 'geojson',
+//                 data: feature,
+//                 generateId: true
+//             })
+
+//             map.addLayer({
+//                 id: 'admin-2-fill-germany',
+//                 type: 'fill',
+//                 source: 'admin-2-germany',
+//                 // filter: ['==', ['get', 'admin_level'], 6],
+//                 paint: {
+//                     'fill-color': '#03fdfe',
+//                     'fill-opacity': [
+//                         'case',
+//                         ['boolean', ['feature-state', 'hover'], false],
+//                         0.6,
+//                         0.3
+//                     ]
+//                 }
+//             })
+            
+//         } else {
+//             console.log(`Could not find OSM ID for ${countryName}`);
+//         }
+//     })
+//     .catch(error => console.error('Error:', error));
