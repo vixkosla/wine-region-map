@@ -30,17 +30,23 @@ async function getRegionPolygon(regionName) {
 
         // console.log(data)
 
-        if (data) {
+        if (data.features.length > 0) {
             // Extract the OSM ID from the response
             const geojson = data.features[0]
             return geojson;
         } else {
             console.error(`No data found for country "${regionName}"`);
-            return null;
+            return {
+                "type": "Feature",
+                "properties": {}
+            }
         }
     } catch (error) {
         console.error('Error fetching data:', error);
-        return null;
+        return {
+            "type": "Feature",
+            "properties": {}
+        }
     }
 }
 
@@ -57,7 +63,7 @@ const json = []
 countries.forEach((country, index) => {
 
     // setTimeout(() => {
-        // promises.push(getCountryPolygon(country))
+    // promises.push(getCountryPolygon(country))
     // }, index * 2000)
 })
 
@@ -78,7 +84,7 @@ Promise.all(promises).then(data => {
 })
 
 // Promise.allSettled(promises).then(e => {
-    // console.log(promises)
+// console.log(promises)
 // })
 
 

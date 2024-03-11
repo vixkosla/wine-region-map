@@ -6,18 +6,35 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
-    <link href='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.css' rel='stylesheet' />
+    <link href='https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css' rel='stylesheet' />
+    <link rel="stylesheet" href="./style.css">
+    <!-- <link rel="stylesheet" href=""> -->
 </head>
 
 <body>
-    <div id='map' style='width: 1400px; height: 1300px;'></div>
+
+    <div id='map'>
+        <div id="left" class="sidebar flex-center left collapsed">
+            <div class="sidebar-content rounded-rect flex-center">
+                Left Sidebar
+                <div id="arrow" class="sidebar-toggle rounded-rect left">
+                    &rarr;
+                </div>
+            </div>
+        </div>
+    </div>
+
 
     <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.4/d3.min.js"></script>
-    <script src='https://api.mapbox.com/mapbox-gl-js/v3.1.2/mapbox-gl.js'></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js'></script>
+
+
+    <script type="module" src="./main.js"></script>
+    <script type="module" src="./sidebar.js"></script>
+
 
     <!-- <script src="./prepareData.js"></script> -->
-    <script type="module" src="./main.js"></script>
     <!-- <script type="module" src="./overpass.js"></script> -->
 
 </body>

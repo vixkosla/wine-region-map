@@ -72,6 +72,8 @@ fs.readFile('./result2.json', 'utf-8', (err, data) => {
             // console.log(answer)
             // dataAnswers.push(answer)
             const jsonDataUpdated = jsonData.map((item, index) => {
+                
+
                 return {
                     webid: item["webid"],
                     id: item["id"],

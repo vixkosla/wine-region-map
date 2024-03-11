@@ -1,8 +1,10 @@
 // import {getCountryOSMID} from './overpass.js'
+import {toggleSidebar} from './sidebar.js'
+
 
 mapboxgl.accessToken = 'pk.eyJ1IjoiaG9va2FobG9jYXRvciIsImEiOiI5WnJEQTBBIn0.DrAlI7fhFaYr2RcrWWocgw';
 
-const map = new mapboxgl.Map({
+export const map = new mapboxgl.Map({
     container: 'map',
     // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
     // style: "mapbox://styles/hookahlocator/clsox9viv009f01pk1mf40pwu",
@@ -23,12 +25,12 @@ map.on('style.load', () => {
 });
 
 map.on('style.load', () => {
-    map.addSource('mapbox-dem', {
-        'type': 'raster-dem',
-        'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
-        'tileSize': 512,
-        'maxzoom': 14
-    });
+    // map.addSource('mapbox-dem', {
+    //     'type': 'raster-dem',
+    //     'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+    //     'tileSize': 512,
+    //     'maxzoom': 14
+    // });
     // add the DEM source as a terrain layer with exaggerated height
     // map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
 });
@@ -63,25 +65,25 @@ loadData('./result5.json').then(data => {
             generateId: true
         })
 
-        map.addLayer({
-            id: 'admin-2-fill-country',
-            type: 'fill',
-            source: 'admin-2-countries',
-            // filter: ['==', ['get', 'admin_level'], 6],
-            paint: {
-                'fill-color': ['get', 'color'],
-                'fill-opacity': [
-                    'case',
-                    ['boolean', ['feature-state', 'hover'], false],
-                    0.6,
-                    0.3
-                ]
-            }
-        })
+        // map.addLayer({
+        //     id: 'admin-2-fill-country',
+        //     type: 'fill',
+        //     source: 'admin-2-countries',
+        //     // filter: ['==', ['get', 'admin_level'], 6],
+        //     paint: {
+        //         'fill-color': ['get', 'color'],
+        //         'fill-opacity': [
+        //             'case',
+        //             ['boolean', ['feature-state', 'hover'], false],
+        //             0.6,
+        //             0.3
+        //         ]
+        //     }
+        // })
 
 })
 
-loadData('./result6.json').then(data => {
+loadData('./result7.json').then(data => {
 
     console.log(data)
     
@@ -147,6 +149,15 @@ loadData('./result6.json').then(data => {
 
 
 })
+
+
+
+map.on('load', () => {
+    toggleSidebar('left');
+});
+
+const sidebarArrow = document.querySelector('#arrow')
+sidebarArrow.addEventListener('onclick', toggleSidebar('left'))
 
 
 // // Example usage
