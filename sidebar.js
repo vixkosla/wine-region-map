@@ -1,6 +1,8 @@
 // import { map } from './main.js'
+import  { map }  from '/main.js'
 
 export function toggleSidebar(id) {
+    console.log('start click event')
     const elem = document.getElementById(id);
     // Add or remove the 'collapsed' CSS class from the sidebar element.
     // Returns boolean "true" or "false" whether 'collapsed' is in the class list.

@@ -100,6 +100,31 @@ loadData('./result7.json').then(data => {
         } 
     })
 
+    let countries = data.filter(item => item.properties.parent_id == 0)
+    console.log(countries)
+
+    const menu = document.querySelector('#sidebar-content-list')
+
+    const ul = document.createElement('ul')
+    ul.className = 'rounded-rect'
+
+    for (let country of countries) {
+        const li = document.createElement('li')
+
+        li.textContent = country.properties.web_name
+        // li.href = '#'
+
+        li.onclick = function() {
+            map.fitBounds(country.bbox, {
+                padding: 20
+            });
+        }
+
+        ul.appendChild(li)
+    }
+
+    menu.appendChild(ul)
+
 
     // let features = data.map((item, i) => {
     //     let feature = turf.multiPolygon(item.geojson.coordinates)
@@ -157,7 +182,10 @@ map.on('load', () => {
 });
 
 const sidebarArrow = document.querySelector('#arrow')
-sidebarArrow.addEventListener('onclick', toggleSidebar('left'))
+// console.log(sidebarArrow)
+sidebarArrow.addEventListener('click', () =>  { toggleSidebar('left') })
+// console.log(sidebarArrow)    
+
 
 
 // // Example usage
@@ -203,3 +231,4 @@ sidebarArrow.addEventListener('onclick', toggleSidebar('left'))
 //         }
 //     })
 //     .catch(error => console.error('Error:', error));
+

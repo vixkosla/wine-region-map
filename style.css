@@ -76,3 +76,26 @@ The toggleSidebar() function removes this class from the element in order to exp
 .right.collapsed {
     transform: translateX(295px);
 }
+
+#sidebar-content-list {
+    height: 100%;
+    width: 100%;
+}
+
+ul {
+    height: 100%;
+    font-size: 12px;
+    overflow: auto;
+    list-style: none;
+    padding: 5px;
+    margin: 0;
+}
+
+li {
+    border: 1px solid black;
+    cursor: pointer;
+}
+
+li:hover {
+    background-color: beige;
+}
