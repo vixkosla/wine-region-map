@@ -119,6 +119,11 @@ ul {
     font-family: 'GothamPro', 'Georgia', "Helvetica Neue", Helvetica, sans-serif;
 }
 
+ul.countries {
+    padding-top: 5px;
+    background-color: var(--color_list_country); 
+    padding-bottom: 45px;
+}
 
 ul ul {
     padding: 0px;
@@ -128,7 +133,22 @@ li {
     cursor: pointer;
 }
 
-ul.countries > li {
+li.country {
+    /* list-style: none; */
+    line-height: 12px;
+}
+
+li.region {
+    font-size: 10px;
+    line-height: 14px;
+    text-transform: uppercase;
+}
+
+li.subregion {
+    line-height: 16px;
+}
+
+ul.countries  li {
     /* border: 1px solid black; */
     letter-spacing: 2px;
     font-size: 8px;
@@ -144,7 +164,7 @@ ul .countries > li:hover {
 }
 
 ul .regions  {
-    font-size: 10px;
+    /* font-size: 10px; */
     text-align: center;
     text-transform: lowercase;
     background-color: var(--color_list_region)

@@ -83,6 +83,8 @@ loadData('./result5.json').then(data => {
 
 })
 
+
+
 loadData('./result7.json').then(data => {
 
     console.log(data)
@@ -100,7 +102,7 @@ loadData('./result7.json').then(data => {
         } 
     })
 
-    let countries = data.filter(item => item.properties.parent_id == 0)
+    let countries = data.filter(item => item.properties.parent_id == 0).sort((a, b) => a.properties.web_name > b.properties.web_name)
     console.log(countries)
 
     const menu = document.querySelector('#sidebar-content-list')
@@ -114,7 +116,7 @@ loadData('./result7.json').then(data => {
 
         li.textContent = country.properties.web_name
         li.classList.add('non-active')
-        // li.href = '#'
+        li.classList.add('country')
 
         li.onclick = function(e) {
 
@@ -127,7 +129,7 @@ loadData('./result7.json').then(data => {
                     if ( li.childNodes[1] && li.childNodes[1].classList.contains('visible')) {
                         console.log(li.childNodes[1])
                         li.childNodes[1].style.display = "none"
-                        li.childNodes[1].classList.add('non-visible')
+                        li.childNodes[1].classList.replace('visible', 'non-visible')
 
                         console.log('non-visible')
                     }
@@ -141,14 +143,17 @@ loadData('./result7.json').then(data => {
                         padding: 20
                     });
 
+                    changeSourceData(data, country.properties.web_id)
+
+
                     console.log('not yet')
                     li.classList.replace('non-active','active')
 
                     console.log(li.childNodes[1])
 
-                    if (li.childNodes[1] && li.childNodes[1].classList == 'non-visible') {
+                    if (li.childNodes[1] && li.childNodes[1].classList.contains('non-visible')) {
                         li.childNodes[1].style.display = "block"
-                        li.childNodes[1].classList = 'visible'
+                        li.childNodes[1].classList.replace('non-visible','visible')
 
                         console.log('visible')
                     } else {
@@ -162,14 +167,12 @@ loadData('./result7.json').then(data => {
                             const liRegion = document.createElement('li')
                             liRegion.textContent = region.properties.web_name
                             liRegion.classList.add('non-active')
+                            liRegion.classList.add('region')
+
                             
                             liRegion.onclick = function(e) {
 
-                                // 
-
                                 e.stopPropagation()
-
-                        
 
                                 const subRegions = data.filter(item => region.properties.web_id == item.properties.parent_id)
 
@@ -195,6 +198,9 @@ loadData('./result7.json').then(data => {
                                         map.fitBounds(region.bbox, {
                                             padding: 20
                                         });
+
+                                        // changeSourceData(data, region.properties.web_id)
+
                                         // console.log(liRegion.childNodes[1].classList)
 
                                         liRegion.classList.replace('non-active','active')
@@ -207,7 +213,10 @@ loadData('./result7.json').then(data => {
                                             for (let subRegion of subRegions) {
 
                                                 const liSubregion = document.createElement('li')
+                                                liSubregion.classList.add('non-active')
+                                                liSubregion.classList.add('subregion')
                                                 liSubregion.textContent = subRegion.properties.web_name
+
                                                 liSubregion.onclick = function(e) {
                                                     e.stopPropagation()
         
@@ -221,13 +230,15 @@ loadData('./result7.json').then(data => {
         
                                             liRegion.appendChild(ulSubregion)
                                         }
-                                    } else {
-                                        map.fitBounds(region.bbox, {
-                                            padding: 20
-                                        });
-                                    }
+                                    } 
+                                } else {
+                                    map.fitBounds(region.bbox, {
+                                        padding: 20
+                                    });
 
-           
+                                    // changeSourceData(data, region.properties.web_id)
+
+
                                 }
 
 
@@ -244,6 +255,9 @@ loadData('./result7.json').then(data => {
                 map.fitBounds(country.bbox, {
                     padding: 20
                 });
+
+                changeSourceData(data, country.properties.web_id)
+
             }
 
         }
@@ -271,6 +285,20 @@ loadData('./result7.json').then(data => {
 
     // let feature = data.features.filter(feature => feature.properties.admin_level == 4)
 
+    function changeSourceData(data, id) {
+
+        let features = []
+    
+        features = data.filter(item => item.properties.web_id == id || item.properties.parent_id == id)
+    
+        map.getSource('admin-2').setData({
+            "type": "FeatureCollection",
+            "features": features
+        })
+    
+        // return features 
+    }
+
     const polygons = {
         type: 'FeatureCollection',
         features: features
@@ -288,7 +316,7 @@ loadData('./result7.json').then(data => {
         id: 'admin-2-fill',
         type: 'fill',
         source: 'admin-2',
-        // filter: ['==', ['get', 'admin_level'], 6],
+        filter: ['!=', ['get', 'parent_id'], 0],
         paint: {
             'fill-color': ['get', 'color'],
             'fill-opacity': [
@@ -297,6 +325,40 @@ loadData('./result7.json').then(data => {
                 0.6,
                 0.3
             ]
+        }
+    })
+
+    map.addLayer({
+        id: 'admin-2-fill-countries',
+        type: 'fill',
+        source: 'admin-2',
+        filter: ['==', ['get', 'parent_id'], 0],
+        paint: {
+            'fill-color': ['get', 'color'],
+            'fill-opacity': [
+                'case',
+                ['boolean', ['feature-state', 'hover'], false],
+                0.6,
+                0.1
+            ]
+        }
+    })
+
+    map.addLayer({
+        id: 'admin-2-line-countries',
+        type: 'line',
+        source: 'admin-2',
+        filter: ['==', ['get', 'parent_id'], 0],
+        paint: {
+            'line-color': ['get', 'color'],
+            'line-width': 2,
+            'line-dasharray': [5, 1]
+            // 'fill-opacity': [
+            //     'case',
+            //     ['boolean', ['feature-state', 'hover'], false],
+            //     0.6,
+            //     0.1
+            // ]
         }
     })
 
