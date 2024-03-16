@@ -139,10 +139,27 @@ li.country {
 }
 
 li.region {
-    font-size: 10px;
+    font-size: 14px;
     line-height: 14px;
     text-transform: uppercase;
 }
+
+li.region:first-child {
+    padding-top: 4px;
+}
+
+li.region:last-child {
+    padding-bottom: 4px;
+}
+
+li.subregion:first-child {
+    padding-top: 4px;
+}
+
+li.subregion:last-child {
+    padding-bottom: 4px;
+}
+
 
 li.subregion {
     line-height: 16px;
@@ -151,7 +168,7 @@ li.subregion {
 ul.countries  li {
     /* border: 1px solid black; */
     letter-spacing: 2px;
-    font-size: 8px;
+    font-size: 10px;
     text-align: left;
     padding-left: 10px;
     background-color: var(--color_list_country);

@@ -1,5 +1,5 @@
 // import { map } from './main.js'
-import  { map }  from '/main.js'
+import  { map }  from './main.js'
 
 export function toggleSidebar(id) {
     console.log('start click event')

@@ -10,6 +10,7 @@ export const map = new mapboxgl.Map({
     // style: "mapbox://styles/hookahlocator/clsox9viv009f01pk1mf40pwu",
     // style: "mapbox://styles/mapbox/satellite-streets-v12",
     style: "mapbox://styles/mapbox/dark-v10?optimize=true",
+    // style: "mapbox://styles/hookahlocator/clg82vae6008501mpb46y0kwc?optimize=true",
 
     // style: "mapbox://styles/hookahlocator/clsumxbp8002g01pihdv4290g",
     center: [-9.1963944,
@@ -323,7 +324,7 @@ loadData('./result7.json').then(data => {
                 'case',
                 ['boolean', ['feature-state', 'hover'], false],
                 0.6,
-                0.3
+                0.1
             ]
         }
     })
@@ -349,6 +350,24 @@ loadData('./result7.json').then(data => {
         type: 'line',
         source: 'admin-2',
         filter: ['==', ['get', 'parent_id'], 0],
+        paint: {
+            'line-color': ['get', 'color'],
+            'line-width': 2,
+            'line-dasharray': [5, 1]
+            // 'fill-opacity': [
+            //     'case',
+            //     ['boolean', ['feature-state', 'hover'], false],
+            //     0.6,
+            //     0.1
+            // ]
+        }
+    })
+
+    map.addLayer({
+        id: 'admin-2-line-states',
+        type: 'line',
+        source: 'admin-2',
+        filter: ['==', ['get', 'addresstype'], 'state'],
         paint: {
             'line-color': ['get', 'color'],
             'line-width': 2,
