@@ -106,18 +106,146 @@ loadData('./result7.json').then(data => {
     const menu = document.querySelector('#sidebar-content-list')
 
     const ul = document.createElement('ul')
-    ul.className = 'rounded-rect'
+    ul.classList.add('rounded-rect')
+    ul.classList.add('countries')
 
     for (let country of countries) {
         const li = document.createElement('li')
 
         li.textContent = country.properties.web_name
+        li.classList.add('non-active')
         // li.href = '#'
 
-        li.onclick = function() {
-            map.fitBounds(country.bbox, {
-                padding: 20
-            });
+        li.onclick = function(e) {
+
+            const regions = data.filter(item => country.properties.web_id == item.properties.parent_id)
+
+            if (regions.length > 0) {
+
+                if (li.classList.contains('active')) {
+
+                    if ( li.childNodes[1] && li.childNodes[1].classList.contains('visible')) {
+                        console.log(li.childNodes[1])
+                        li.childNodes[1].style.display = "none"
+                        li.childNodes[1].classList.add('non-visible')
+
+                        console.log('non-visible')
+                    }
+
+                    li.classList.replace('active', 'non-active')
+
+                    console.log('already')
+
+                } else if (li.classList.contains('non-active')){
+                    map.fitBounds(country.bbox, {
+                        padding: 20
+                    });
+
+                    console.log('not yet')
+                    li.classList.replace('non-active','active')
+
+                    console.log(li.childNodes[1])
+
+                    if (li.childNodes[1] && li.childNodes[1].classList == 'non-visible') {
+                        li.childNodes[1].style.display = "block"
+                        li.childNodes[1].classList = 'visible'
+
+                        console.log('visible')
+                    } else {
+
+                        const ulRegion = document.createElement('ul')
+                        ulRegion.classList.add('visible')
+                        ulRegion.classList.add('regions')
+
+            
+                        for (let region of regions) {
+                            const liRegion = document.createElement('li')
+                            liRegion.textContent = region.properties.web_name
+                            liRegion.classList.add('non-active')
+                            
+                            liRegion.onclick = function(e) {
+
+                                // 
+
+                                e.stopPropagation()
+
+                        
+
+                                const subRegions = data.filter(item => region.properties.web_id == item.properties.parent_id)
+
+                                if (subRegions.length > 0 )   {
+                                    const ulSubregion = document.createElement('ul')
+                                    ulSubregion.classList.add('visible')
+                                    ulSubregion.classList.add('subRegions')
+
+                                    if (liRegion.classList.contains('active')) {
+
+                                        console.log(liRegion.childNodes[1].classList)
+
+                                        if (liRegion.childNodes[1] && liRegion.childNodes[1].classList.contains('visible')) {
+                                            liRegion.childNodes[1].style.display = "none"
+                                            liRegion.childNodes[1].classList.replace('visible','non-visible')
+                                        }
+
+                                        liRegion.classList.replace('active','non-active')
+
+
+                                    } else if (liRegion.classList.contains('non-active')) {
+
+                                        map.fitBounds(region.bbox, {
+                                            padding: 20
+                                        });
+                                        // console.log(liRegion.childNodes[1].classList)
+
+                                        liRegion.classList.replace('non-active','active')
+
+                                        if (liRegion.childNodes[1] && liRegion.childNodes[1].classList.contains('non-visible')) {
+                                            liRegion.childNodes[1].style.display = "block"
+                                            liRegion.childNodes[1].classList.replace('non-visible','visible')
+                                            
+                                        } else {
+                                            for (let subRegion of subRegions) {
+
+                                                const liSubregion = document.createElement('li')
+                                                liSubregion.textContent = subRegion.properties.web_name
+                                                liSubregion.onclick = function(e) {
+                                                    e.stopPropagation()
+        
+                                                    map.fitBounds(subRegion.bbox, {
+                                                        padding: 20
+                                                    })
+                                                }
+        
+                                                ulSubregion.appendChild(liSubregion)
+                                            }
+        
+                                            liRegion.appendChild(ulSubregion)
+                                        }
+                                    } else {
+                                        map.fitBounds(region.bbox, {
+                                            padding: 20
+                                        });
+                                    }
+
+           
+                                }
+
+
+                            }                       
+            
+                            ulRegion.appendChild(liRegion)
+                        }
+            
+                        li.appendChild(ulRegion)
+                        
+                    }
+                }
+            } else {
+                map.fitBounds(country.bbox, {
+                    padding: 20
+                });
+            }
+
         }
 
         ul.appendChild(li)

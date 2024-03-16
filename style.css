@@ -1,8 +1,29 @@
+:root {
+    --width_sidebar: 300px;
+    --width_sidebar_translate: calc(var(--width_sidebar) - 5px);
+
+    --color_list_country: #f7f4f4;
+    --color_list_country_hover: #f7f2f2; 
+    --color_list_region: #f7f4f4;
+    --color_list_region_hover: #f7f2f2; 
+    --color_list_subregion: #f8f5f5;
+    --color_list_subregion_hover: #B94560;; 
+
+
+}
+
+
+
 #map {
     position: absolute;
     top: 0;
     bottom: 0;
     width: 100%;
+}
+
+@font-face {
+    font-family: 'GothamPro';
+    src: url("./fonts/Gotham Pro/gothampro.ttf");
 }
 
 .rounded-rect {
@@ -61,8 +82,9 @@
 .sidebar {
     transition: transform 1s;
     z-index: 1;
-    width: 300px;
+    width: var(--width_sidebar);
     height: 100%;
+    /* font-family: 'GothamPro', "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
 }
 
 /*
@@ -70,11 +92,11 @@ The sidebar styling has them "expanded" by default, we use CSS transforms to pus
 The toggleSidebar() function removes this class from the element in order to expand it.
 */
 .left.collapsed {
-    transform: translateX(-295px);
+    transform: translateX(calc(var(--width_sidebar_translate) * (-1)));
 }
 
 .right.collapsed {
-    transform: translateX(295px);
+    transform: translateX(var(--width_sidebar_translate));
 }
 
 #sidebar-content-list {
@@ -82,20 +104,71 @@ The toggleSidebar() function removes this class from the element in order to exp
     width: 100%;
 }
 
+#sidebar-content-list:first-child {
+    /* padding-left: 15px; */
+}
+
 ul {
     height: 100%;
-    font-size: 12px;
+    font-size: 10px;
+    text-transform: uppercase;
     overflow: auto;
     list-style: none;
-    padding: 5px;
+    padding: 0;
     margin: 0;
+    font-family: 'GothamPro', 'Georgia', "Helvetica Neue", Helvetica, sans-serif;
+}
+
+
+ul ul {
+    padding: 0px;
 }
 
 li {
-    border: 1px solid black;
     cursor: pointer;
 }
 
-li:hover {
-    background-color: beige;
+ul.countries > li {
+    /* border: 1px solid black; */
+    letter-spacing: 2px;
+    font-size: 8px;
+    text-align: left;
+    padding-left: 10px;
+    background-color: var(--color_list_country);
 }
+
+ul .countries > li:hover {
+    background-color: var(--color_list_country_hover);
+    /* background: var(--color_list_country_hover) */
+    
+}
+
+ul .regions  {
+    font-size: 10px;
+    text-align: center;
+    text-transform: lowercase;
+    background-color: var(--color_list_region)
+}
+
+ul.regions > li.active {
+    border-bottom:  1px solid #B94560;
+}
+
+ul .regions > li:hover {
+    background-color: var(--color_list_region_hover);
+}
+
+ul.subRegions > li {
+    font-size: 12px;
+    text-align: left;
+    background-color: var(--color_list_subregion)
+    /* background: linear-gradient(to bottom, rgb(54, 246, 246) 10%, 100%, transparent 50%); */
+}
+
+ul .subRegions > li:hover {
+    /* background-color: var(--color_list_subregion_hover); */
+    color: white;
+    background: linear-gradient(to right, var(--color_list_subregion_hover) 10%, 50%, transparent 130%);
+
+}
+
