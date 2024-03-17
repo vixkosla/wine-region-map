@@ -194,10 +194,13 @@ li.subregion {
 
 li.subregion:first-child {
     padding-top: 4px;
+    border-top: 1px solid #B94560;
+
 }
 
 li.subregion:last-child {
-    padding-bottom: 4px;
+    border-bottom: 1px solid #B94560;
+
 }
 
 
@@ -214,7 +217,7 @@ ul .countries > li:hover {
 
 
 ul.regions > li.active {
-    border-bottom:  1px solid #B94560;
+    /* border-bottom:  1px solid #B94560; */
     margin-bottom: 4px;
 }
 
