@@ -180,7 +180,7 @@ loadData('./result7.json').then(data => {
                                 if (subRegions.length > 0 )   {
                                     const ulSubregion = document.createElement('ul')
                                     ulSubregion.classList.add('visible')
-                                    ulSubregion.classList.add('subRegions')
+                                    ulSubregion.classList.add('subregions')
 
                                     if (liRegion.classList.contains('active')) {
 

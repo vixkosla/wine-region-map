@@ -102,6 +102,8 @@ The toggleSidebar() function removes this class from the element in order to exp
 #sidebar-content-list {
     height: 100%;
     width: 100%;
+    padding-bottom: 45px;
+    box-sizing: content-box;
 }
 
 #sidebar-content-list:first-child {
@@ -122,7 +124,8 @@ ul {
 ul.countries {
     padding-top: 5px;
     background-color: var(--color_list_country); 
-    padding-bottom: 45px;
+    /* padding-bottom: 45px; */
+    /* margin-bottom: 50px; */
 }
 
 ul ul {
@@ -133,15 +136,39 @@ li {
     cursor: pointer;
 }
 
+ul.countries  li {
+    /* border: 1px solid black; */
+    letter-spacing: 1px;
+    text-align: left;
+    padding-left: 10px;
+    background-color: var(--color_list_country);
+}
+
 li.country {
     /* list-style: none; */
-    line-height: 12px;
+    text-transform: capitalize;
+    line-height: 22px;
+    font-size: 14px;
+}
+
+
+ul.regions  {
+    /* font-size: 12px !important; */
+    margin: 10px 0;
+    margin-right: 10px;
+    border: 1px solid ;
+    text-align: center;
+    text-transform: lowercase;
+    background-color: var(--color_list_region);
+    box-shadow: 0 0 10px -5px black;
+    border-radius: 5px;
 }
 
 li.region {
-    font-size: 14px;
-    line-height: 14px;
-    text-transform: uppercase;
+
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: capitalize;
 }
 
 li.region:first-child {
@@ -150,6 +177,19 @@ li.region:first-child {
 
 li.region:last-child {
     padding-bottom: 4px;
+}
+
+
+ul.subregions {
+    margin-left: -12.5px;
+    font-size: 10px;
+    text-align: left;
+    /* text-transform: capitalize; */
+    /* line-height: 18px; */
+}
+
+li.subregion {
+    line-height: 18px;
 }
 
 li.subregion:first-child {
@@ -161,18 +201,9 @@ li.subregion:last-child {
 }
 
 
-li.subregion {
-    line-height: 16px;
-}
 
-ul.countries  li {
-    /* border: 1px solid black; */
-    letter-spacing: 2px;
-    font-size: 10px;
-    text-align: left;
-    padding-left: 10px;
-    background-color: var(--color_list_country);
-}
+
+
 
 ul .countries > li:hover {
     background-color: var(--color_list_country_hover);
@@ -180,29 +211,23 @@ ul .countries > li:hover {
     
 }
 
-ul .regions  {
-    /* font-size: 10px; */
-    text-align: center;
-    text-transform: lowercase;
-    background-color: var(--color_list_region)
-}
+
 
 ul.regions > li.active {
     border-bottom:  1px solid #B94560;
+    margin-bottom: 4px;
 }
 
 ul .regions > li:hover {
     background-color: var(--color_list_region_hover);
 }
 
-ul.subRegions > li {
-    font-size: 12px;
-    text-align: left;
+ul.subregions > li {
     background-color: var(--color_list_subregion)
     /* background: linear-gradient(to bottom, rgb(54, 246, 246) 10%, 100%, transparent 50%); */
 }
 
-ul .subRegions > li:hover {
+ul .subregions > li:hover {
     /* background-color: var(--color_list_subregion_hover); */
     color: white;
     background: linear-gradient(to right, var(--color_list_subregion_hover) 10%, 50%, transparent 130%);
