@@ -706,7 +706,7 @@
     [283, 81, "Rioja Alta", "ES"],
     [284, 280, "Rías Baixas", "ES"],
     [285, 574, "Alentejo", "PT"],
-    [286, 18, "Setúbal", "PT"],
+    [286, 18, "Distrito de Setúbal", "PT"],
     [287, 0, "Israel", "IL"],
     [288, 287, "Upper Galilee", "IL"],
     [289, 287, "Galilee", "IL"],
@@ -789,7 +789,7 @@
     [365, 100, "Regiano", "IT"],
     [366, 0, "Cyprus", "CY"],
     [367, 0, "Moldova", "MD"],
-    [368, 18, "Lisboa", "PT"],
+    [368, 18, "Distrito de Lisboa", "PT"],
     [369, 368, "Bucelas", "PT"],
     [370, 563, "Dao", "PT"],
     [371, 423, "Vila Nova de Gaia", "PT"],
@@ -844,7 +844,7 @@
     [420, 184, "Marsanne", "FR"],
     [421, 224, "Darling", "ZA"],
     [422, 186, "Pays d'Oc", "FR"],
-    [423, 18, "Porto", "PT"],
+    [423, 18, "Distrito do Porto", "PT"],
     [424, 166, "Côtes de Castillon", "FR"],
     [425, 166, "Cadillac and Premier Côtes de Bordeaux", "FR"],
     [426, 166, "Moulis", "FR"],
@@ -983,10 +983,9 @@
     [559, 140, "Beqaa Governorate", "LB"],
     [560, 142, "Fes Meknes", "MA"],
     [561, 146, "Wellington", "NZ"],
-    [562, 18, "Beja", "PT"],
-    [562, 18, "Évora", "PT"],
-    [563, 18, "Viseu", "PT"],
-    [564, 18, "Coimbra", "PT"],
+    [562, 18, "Município de Beja", "PT"],
+    [563, 18, "Distrito de Viseu", "PT"],
+    [564, 18, "Município de Coimbra", "PT"],
     [565, 20, "Pays de la Loire", "FR"],
     [566, 20, "Nouvelle-Aquitaine", "FR"],
     [567, 20, "Occitanie", "FR"],
@@ -996,9 +995,9 @@
     [571, 219, "Región de Valparaíso", "CL"],
     [572, 219, "Región del Maule", "CL"],
     [573, 24, "Aragón", "ES"],
-    [574, 24, "Évora", "PT"],
-    [575, 287, "North District", "IS"],
-    [576, 287, "Jerusalem District", "IS"],
+    [574, 24, "Município de Évora", "PT"],
+    [575, 287, "Mahoz HaZafon", "IS"],
+    [576, 287, "IL-JM", "IS"],
     [577, 82, "Lombardia", "IT"],
     [578, 145, "Northern Ireland", "GB"],
     [579, 323 ,"Noord-Holland", "NL"],
@@ -1012,7 +1011,8 @@
     [587, 219, "Región de Coquimbo", "CL"],
     [588, 367, "Gagauzia", "MD"],
     [589, 20, "Auvergne-Rhône-Alpes", "FR"],
-    []
+    [590, 18, "Évora", "PT"]
+    
 
   ]
 }

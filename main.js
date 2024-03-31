@@ -30,14 +30,14 @@ map.on('style.load', () => {
 })
 
 map.on('style.load', () => {
-  // map.addSource('mapbox-dem', {
-  //     'type': 'raster-dem',
-  //     'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
-  //     'tileSize': 512,
-  //     'maxzoom': 14
-  // });
+  map.addSource('mapbox-dem', {
+      'type': 'raster-dem',
+      'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
+      'tileSize': 512,
+      'maxzoom': 14
+  });
   // add the DEM source as a terrain layer with exaggerated height
-  // map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 1.5 });
+  map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 3.5 });
 })
 
 let color = d3.scaleOrdinal(d3.schemeTableau10)
@@ -154,8 +154,6 @@ loadData('./result9.json').then(data => {
     li.classList.add('country')
 
     li.onclick = function (e) {
-
-      
       const regions = data.filter(
         item => country.properties.web_id == item.properties.parent_id
       )
@@ -165,6 +163,7 @@ loadData('./result9.json').then(data => {
       if (regions.length > 0) {
         map.setLayoutProperty('admin-2-line-regions', 'visibility', 'visible')
         map.setLayoutProperty('admin-2-fill-regions', 'visibility', 'visible')
+        changeSourceData(data, country.properties.web_id)
 
         if (li.classList.contains('active')) {
           if (
@@ -179,8 +178,10 @@ loadData('./result9.json').then(data => {
           }
 
           li.classList.replace('active', 'non-active')
-          map.setFilter('admin-2-fill-countries', ['==', ['get', 'parent_id'], 0])
-          map.setFilter('admin-2-line-countries', ['==', ['get', 'parent_id'], 0])
+          // map.setFilter('admin-2-fill-countries', ['==', ['get', 'parent_id'], 0])
+          // map.setFilter('admin-2-line-countries', ['==', ['get', 'parent_id'], 0])
+
+          changeSourceData(data, country.properties.web_id)
 
           console.log('already')
         } else if (li.classList.contains('non-active')) {
@@ -380,14 +381,14 @@ loadData('./result9.json').then(data => {
 
   let lastIdContainer = null
 
-  function defaultPositionMap() {
+  function defaultPositionMap () {
     map.setFilter('admin-2-fill-countries', ['==', ['get', 'parent_id'], 0])
     map.setFilter('admin-2-line-countries', ['==', ['get', 'parent_id'], 0])
 
     map.setLayoutProperty('admin-2-line-regions', 'visibility', 'none')
     map.setLayoutProperty('admin-2-fill-regions', 'visibility', 'none')
 
-    map.flyTo({...defaultObserverPoint})
+    map.flyTo({ ...defaultObserverPoint })
 
     map.setPaintProperty('admin-2-fill-countries', 'fill-opacity', 0.4)
   }
@@ -412,14 +413,12 @@ loadData('./result9.json').then(data => {
         map.setFilter('admin-2-fill-regions', ['==', ['get', 'parent_id'], id])
         map.setFilter('admin-2-line-regions', ['==', ['get', 'parent_id'], id])
       }
-  
+
       map.setFilter('admin-2-fill-countries', ['==', ['get', 'web_id'], id])
       map.setFilter('admin-2-line-countries', ['==', ['get', 'web_id'], id])
-  
+
       map.setPaintProperty('admin-2-fill-countries', 'fill-opacity', 0.05)
     }
-
-
 
     lastIdContainer = id
 
