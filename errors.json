@@ -1,0 +1,31 @@
+{
+    "errors": [
+    [143, 560, "Guerrouane", "MA"],
+    [151, 18, "Douro", "PT", 2],
+    [370, 18, "Dao", "PT"],
+    [ 21, 20, "Armagnac", "FR", 2 ],
+    [168, 566, "Premier Côtes de Blaye", "FR"],
+    [185, 568, "Côte de Beaune", "FR"],
+    [190, 20, "Southwest France", "FR"],
+    // https://upload.wikimedia.org/wikipedia/commons/6/67/Vignobles_sud_ouest.png
+    // Множество регионов расскиданных на двух административных округах Occitanie и Nouvelle-Aquitaine
+    [211, 569, "Rhône Valley", "FR"],
+    [220, 219, "Cachapoal Valley", "CL"],
+    [221, 571, "Aconcagua Region", "CL"],
+    [222, 219, "Central Valley", "CL"],
+    [285, 574, "Alentejo", "PT"],
+    [286, 18, "Setúbal", "PT"],
+    [288, 287, "Upper Galilee", "IL"],
+    [289, 287, "Galilee", "IL"],
+    [290, 576, "Judean Hills", "IL"],
+    [303, 224, "Paarl", "ZA"],
+    
+    
+
+
+    [446, 146, "North Island", "NZ"],
+    [285, 18, "Alentejo", "PT"],
+    [149, 146, "South Island", "NZ"],
+    
+    ]
+}

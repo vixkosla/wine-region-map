@@ -13,7 +13,6 @@
 }
 
 
-
 #map {
     position: absolute;
     top: 0;
@@ -134,6 +133,10 @@ ul ul {
 
 li {
     cursor: pointer;
+}
+
+ul.countries {
+    padding-top: 20px;
 }
 
 ul.countries  li {
