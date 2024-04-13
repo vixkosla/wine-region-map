@@ -36,12 +36,12 @@ async function getRegionPolygon (regionName, iso, level) {
       case 1:
         url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(
           regionName
-        )}&polygon_geojson=1&polygon_threshold=0.01&limit=1&email=tomcool@yandex.ru&format=geojson&featureType=country`
+        )}&namedetails=1&polygon_geojson=1&polygon_threshold=0.01&limit=1&email=tomcool@yandex.ru&format=geojson&featureType=country`
         break;
       case 2:
         url = `https://nominatim.openstreetmap.org/search?q=${encodeURIComponent(
           regionName
-        )}&featureType=state&countrycodes=${encodeURIComponent(
+        )}&namedetails=1&featureType=state&countrycodes=${encodeURIComponent(
           iso
         )}&polygon_geojson=1&polygon_threshold=0.005&limit=1&email=tomcool@yandex.ru&format=geojson`
 
@@ -51,7 +51,7 @@ async function getRegionPolygon (regionName, iso, level) {
           regionName
         )}&countrycodes=${encodeURIComponent(
           iso
-        )}&polygon_geojson=1&polygon_threshold=0.001&limit=1&email=tomcool@yandex.ru&format=geojson&featureType=settlement`
+        )}&namedetails=1&polygon_geojson=1&polygon_threshold=0.001&limit=1&email=tomcool@yandex.ru&format=geojson&featureType=settleme`
         break;
     }
     // const response = await fetch(`https://nomination.openstreetmap.org/search?q=${encodeURIComponent(regionName)}&format=json&featureType=state&polygon_geojson=1&polygon_threshold=0.01&limit=1&email=tomcool@yandex.ru`)

@@ -6,7 +6,7 @@ mapboxgl.accessToken =
 
 const defaultObserverPoint = {
   center: [-9.1963944, 38.4093151],
-  zoom: 1.1
+  zoom: 3.1
 }
 
 export const map = new mapboxgl.Map({
@@ -18,8 +18,9 @@ export const map = new mapboxgl.Map({
   // style: "mapbox://styles/hookahlocator/clg82vae6008501mpb46y0kwc?optimize=true",
 
   // style: "mapbox://styles/hookahlocator/clsumxbp8002g01pihdv4290g",
-  center: [-9.1963944, 38.4093151], // starting position [lng, lat]
-  zoom: 1.1 // starting zoom
+  center: defaultObserverPoint.center, // starting position [lng, lat]
+  zoom: defaultObserverPoint.zoom, // starting zoom,
+  attributionControl: false
   // pitch: 62, // starting pitch
   // bearing: -20 // starting bearing,
   //            maxBounds: bounds
@@ -31,13 +32,13 @@ map.on('style.load', () => {
 
 map.on('style.load', () => {
   map.addSource('mapbox-dem', {
-      'type': 'raster-dem',
-      'url': 'mapbox://mapbox.mapbox-terrain-dem-v1',
-      'tileSize': 512,
-      'maxzoom': 14
-  });
+    type: 'raster-dem',
+    url: 'mapbox://mapbox.mapbox-terrain-dem-v1',
+    tileSize: 512,
+    maxzoom: 14
+  })
   // add the DEM source as a terrain layer with exaggerated height
-  map.setTerrain({ 'source': 'mapbox-dem', 'exaggeration': 3.5 });
+  map.setTerrain({ source: 'mapbox-dem', exaggeration: 3.5 })
 })
 
 let color = d3.scaleOrdinal(d3.schemeTableau10)
@@ -53,67 +54,6 @@ async function loadImage (url, name) {
   map.loadImage(url, (err, image) => {
     if (err) throw err
     map.addImage(name, image)
-  })
-}
-
-function addMapboxHoverListener () {
-  let idHoveredPolygon = null
-
-  map.on('mousemove', 'admin-2-fill-regions', e => {
-    // console.log(e.features[0].id)
-    // console.log(e.features[0])
-
-    if (e.features.length > 0) {
-      if (idHoveredPolygon === null) {
-        idHoveredPolygon = e.features[0].id
-
-        map.setFeatureState(
-          {
-            source: 'admin-2',
-            // layer: 'admin-2-fill-regions',
-            id: idHoveredPolygon
-          },
-          { hover: true }
-        )
-      } else {
-        if (idHoveredPolygon !== e.features[0].id) {
-          map.setFeatureState(
-            {
-              source: 'admin-2',
-              // layer: 'admin-2-fill-regions',
-              id: idHoveredPolygon
-            },
-            { hover: false }
-          )
-
-          idHoveredPolygon = e.features[0].id
-
-          map.setFeatureState(
-            {
-              source: 'admin-2',
-              // layer: 'admin-2-fill-regions',
-              id: idHoveredPolygon
-            },
-            { hover: true }
-          )
-        }
-      }
-    }
-  })
-
-  map.on('mouseleave', 'admin-2-fill-regions', e => {
-    if (idHoveredPolygon !== null) {
-      map.setFeatureState(
-        {
-          source: 'admin-2',
-          // layer: 'admin-2-fill-regions',
-          id: idHoveredPolygon
-        },
-        { hover: false }
-      )
-
-      idHoveredPolygon = null
-    }
   })
 }
 
@@ -137,7 +77,7 @@ loadData('./result9.json').then(data => {
 
   let countries = data
     .filter(item => item.properties.parent_id == 0)
-    .sort((a, b) => a.properties.web_name > b.properties.web_name)
+    .sort((a, b) => a.properties.namedetails["name:ru"] > b.properties.namedetails["name:ru"])
   console.log(countries)
 
   const menu = document.querySelector('#sidebar-content-list')
@@ -149,101 +89,40 @@ loadData('./result9.json').then(data => {
   for (let country of countries) {
     const li = document.createElement('li')
 
-    li.textContent = country.properties.web_name
+    li.textContent = country.properties.namedetails["name:ru"]
     li.classList.add('non-active')
     li.classList.add('country')
 
     li.onclick = function (e) {
+
+      defaultListCountry(ul, li)
+      changeCountry(data, country.properties.web_id, country)
+
       const regions = data.filter(
         item => country.properties.web_id == item.properties.parent_id
       )
 
-      console.log(regions)
+      if (li.classList.contains('active')) {
+  
+        li.classList.replace('active', 'non-active')
 
-      if (regions.length > 0) {
-        map.setLayoutProperty('admin-2-line-regions', 'visibility', 'visible')
-        map.setLayoutProperty('admin-2-fill-regions', 'visibility', 'visible')
-        changeSourceData(data, country.properties.web_id)
+      } else if (li.classList.contains('non-active')) {
 
-        if (li.classList.contains('active')) {
-          if (
-            li.childNodes[1] &&
-            li.childNodes[1].classList.contains('visible')
-          ) {
-            console.log(li.childNodes[1])
-            li.childNodes[1].style.display = 'none'
-            li.childNodes[1].classList.replace('visible', 'non-visible')
+        li.classList.replace('non-active', 'active')
 
-            console.log('non-visible')
-          }
-
-          li.classList.replace('active', 'non-active')
-          // map.setFilter('admin-2-fill-countries', ['==', ['get', 'parent_id'], 0])
-          // map.setFilter('admin-2-line-countries', ['==', ['get', 'parent_id'], 0])
-
-          changeSourceData(data, country.properties.web_id)
-
-          console.log('already')
-        } else if (li.classList.contains('non-active')) {
-          map.fitBounds(country.bbox, {
-            padding: 20
-          })
-
-          changeSourceData(data, country.properties.web_id)
-
-          console.log('not yet')
-          li.classList.replace('non-active', 'active')
-
-          console.log(li.childNodes[1])
-
-          if (
-            li.childNodes[1] &&
-            li.childNodes[1].classList.contains('non-visible')
-          ) {
-            li.childNodes[1].style.display = 'block'
-            li.childNodes[1].classList.replace('non-visible', 'visible')
-
-            console.log('visible')
-          } else {
+        if (!li.classList.contains('full')) {
+          if (regions.length > 0) {
             const ulRegion = document.createElement('ul')
             ulRegion.classList.add('visible')
             ulRegion.classList.add('regions')
 
             for (let region of regions) {
               const liRegion = document.createElement('li')
-              liRegion.textContent = region.properties.web_name
+              liRegion.textContent = region.properties.namedetails["name:ru"]
               liRegion.classList.add('non-active')
               liRegion.classList.add('region')
 
-              liRegion.onmouseover = function (e) {
-                map.setFeatureState(
-                  {
-                    source: 'admin-2',
-                    // layer: 'admin-2-fill-regions',
-                    id: region.properties.web_id
-                  },
-                  { hover: true }
-                )
-
-                console.log(
-                  'You should found out how to change hover fill property from mapbox docs'
-                )
-              }
-
-              liRegion.onmouseout = function (e) {
-                map.setFeatureState(
-                  {
-                    source: 'admin-2',
-                    // layer: 'admin-2-fill-regions',
-                    id: region.properties.web_id
-                  },
-                  { hover: false }
-                )
-
-                console.log(
-                  'You should found out how to change hover fill property from mapbox docs'
-                )
-              }
+              regionHover(liRegion, region)
 
               liRegion.onclick = function (e) {
                 e.stopPropagation()
@@ -295,7 +174,7 @@ loadData('./result9.json').then(data => {
                       padding: 20
                     })
 
-                    // changeSourceData(data, region.properties.web_id)
+                    // changeCountry(data, region.properties.web_id)
 
                     // console.log(liRegion.childNodes[1].classList)
 
@@ -313,6 +192,7 @@ loadData('./result9.json').then(data => {
                     } else {
                       for (let subRegion of subRegions) {
                         const liSubregion = document.createElement('li')
+
                         liSubregion.classList.add('non-active')
                         liSubregion.classList.add('subregion')
                         liSubregion.textContent = subRegion.properties.web_name
@@ -320,8 +200,11 @@ loadData('./result9.json').then(data => {
                         liSubregion.onclick = function (e) {
                           e.stopPropagation()
 
+                          // map.setPitch(60).
+
                           map.fitBounds(subRegion.bbox, {
-                            padding: 20
+                            padding: 20,
+                            pitch: 60,
                           })
                         }
 
@@ -336,23 +219,24 @@ loadData('./result9.json').then(data => {
                     padding: 20
                   })
 
-                  // changeSourceData(data, region.properties.web_id)
+                  // changeCountry(data, region.properties.web_id)
                 }
               }
 
               ulRegion.appendChild(liRegion)
             }
-
             li.appendChild(ulRegion)
           }
+            li.classList.add('full')
         }
-      } else {
-        map.fitBounds(country.bbox, {
-          padding: 20
-        })
+        // }
 
-        changeSourceData(data, country.properties.web_id)
+        li.classList.replace('non-active', 'active')
       }
+      // } else {
+
+      // changeCountry(data, country.properties.web_id)
+      // }
     }
 
     ul.appendChild(li)
@@ -360,24 +244,112 @@ loadData('./result9.json').then(data => {
 
   menu.appendChild(ul)
 
-  // let features = data.map((item, i) => {
-  //     let feature = turf.multiPolygon(item.geojson.coordinates)
-  //     feature.properties['id'] = i;
-  //     feature.properties['color'] = color(i)
+  addMapboxHoverListener('admin-2-fill-regions')
+  addMapboxHoverListener('admin-2-fill-subregions')
 
-  //     return feature
-  // })
+  function defaultListCountry (ul, li) {
+    ul.childNodes.forEach(child => {
+      // console.log(child.classList)
+      if (child.classList.contains('active') && child != li) {
+        console.log('yes')
+        console.log(child, li)
+        child.classList.replace('active', 'non-active')
+      }
+    })
+  }
 
-  // let features = data.features.map((feature, i) => {
-  //     // feature.properties.admin_level == '6'
-  //     feature.properties['id'] = i;
-  //     feature.properties['color'] = color(i)
-  //     return feature
-  // })
+  function addMapboxHoverListener (layer) {
+    let idHoveredPolygon = null
 
-  // let feature = data.features.filter(feature => feature.properties.admin_level == 4)
+    map.on('mousemove', layer, e => {
+      // console.log(e.features[0].id)
+      // console.log(e.features[0])
 
-  addMapboxHoverListener()
+      if (e.features.length > 0) {
+        if (idHoveredPolygon === null) {
+          idHoveredPolygon = e.features[0].id
+
+          map.setFeatureState(
+            {
+              source: 'admin-2',
+              // layer: 'admin-2-fill-regions',
+              id: idHoveredPolygon
+            },
+            { hover: true }
+          )
+        } else {
+          if (idHoveredPolygon !== e.features[0].id) {
+            map.setFeatureState(
+              {
+                source: 'admin-2',
+                // layer: 'admin-2-fill-regions',
+                id: idHoveredPolygon
+              },
+              { hover: false }
+            )
+
+            idHoveredPolygon = e.features[0].id
+
+            map.setFeatureState(
+              {
+                source: 'admin-2',
+                // layer: 'admin-2-fill-regions',
+                id: idHoveredPolygon
+              },
+              { hover: true }
+            )
+          }
+        }
+      }
+    })
+
+    map.on('mouseleave', layer, e => {
+      if (idHoveredPolygon !== null) {
+        map.setFeatureState(
+          {
+            source: 'admin-2',
+            // layer: 'admin-2-fill-regions',
+            id: idHoveredPolygon
+          },
+          { hover: false }
+        )
+
+        idHoveredPolygon = null
+      }
+    })
+  }
+
+  function regionHover (liRegion, region) {
+    liRegion.onmouseover = function (e) {
+      map.setFeatureState(
+        {
+          source: 'admin-2',
+          // layer: 'admin-2-fill-regions',
+          id: region.properties.web_id
+        },
+        { hover: true }
+      )
+
+      console.log(
+        'You should found out how to change hover fill property from mapbox docs'
+      )
+    }
+
+    liRegion.onmouseout = function (e) {
+      map.setFeatureState(
+        {
+          source: 'admin-2',
+          // layer: 'admin-2-fill-regions',
+          id: region.properties.web_id
+        },
+        { hover: false }
+      )
+
+      console.log(
+        'You should found out how to change hover fill property from mapbox docs'
+      )
+    }
+  }
 
   let lastIdContainer = null
 
@@ -390,10 +362,13 @@ loadData('./result9.json').then(data => {
 
     map.flyTo({ ...defaultObserverPoint })
 
-    map.setPaintProperty('admin-2-fill-countries', 'fill-opacity', 0.4)
+    map.setPaintProperty('admin-2-fill-countries', 'fill-opacity', 0.25)
+    map.setPaintProperty('admin-2-line-countries', 'line-gap-width', 0)
+
+    lastIdContainer = null
   }
 
-  function changeSourceData (data, id) {
+  function changeCountry (data, id, country) {
     let features = []
     // let currentId = id
 
@@ -401,26 +376,34 @@ loadData('./result9.json').then(data => {
       item => item.properties.web_id == id || item.properties.parent_id == id
     )
 
-    // map.getSource('admin-2').setData({
-    //     "type": "FeatureCollection",
-    //     "features": features
-    // })
-
-    if (lastIdContainer === id) {
+    if (lastIdContainer == id) {
       defaultPositionMap()
     } else {
+      // regions
       if (features.length > 0) {
+        console.log(features.length)
+
+        map.setLayoutProperty('admin-2-line-regions', 'visibility', 'visible')
+        map.setLayoutProperty('admin-2-fill-regions', 'visibility', 'visible')
+
         map.setFilter('admin-2-fill-regions', ['==', ['get', 'parent_id'], id])
         map.setFilter('admin-2-line-regions', ['==', ['get', 'parent_id'], id])
       }
 
+      map.fitBounds(country.bbox, {
+        padding: 20
+      })
+
+      //countries
       map.setFilter('admin-2-fill-countries', ['==', ['get', 'web_id'], id])
       map.setFilter('admin-2-line-countries', ['==', ['get', 'web_id'], id])
 
       map.setPaintProperty('admin-2-fill-countries', 'fill-opacity', 0.05)
+      map.setPaintProperty('admin-2-line-countries', 'line-gap-width', 1)
+
+      lastIdContainer = id
     }
 
-    lastIdContainer = id
 
     // return features
   }
@@ -449,33 +432,54 @@ loadData('./result9.json').then(data => {
     // })
   })
 
-  // map.addLayer({
-  //     id: 'admin-2-fill',
-  //     type: 'fill',
-  //     // source: 'admin-2',
-  //     filter: ['!=', ['get', 'parent_id'], 0],
-  //     paint: {
-  //         'fill-color': ['get', 'color'],
-  //         'fill-opacity': [
-  //             'case',
-  //             ['boolean', ['feature-state', 'hover'], false],
-  //             0.6,
-  //             0.1
-  //         ]
-  //     }
-  // })
+  map.addLayer({
+    id: 'admin-2-fill-subregions',
+    type: 'fill',
+    source: 'admin-2',
+    filter: ['==', ['get', 'level'], 3],
+    layout: {
+      // visibility: 'none'
+    },
+    paint: {
+      // 'fill-color': ['get', 'color'],
+      'fill-opacity-transition': { duration: 3500 },
+      'fill-color': '#32a852',
+      'fill-opacity': [
+        'case',
+        ['boolean', ['feature-state', 'hover'], false],
+        0.8,
+        0.2
+      ]
+    }
+  })
+
+  map.addLayer({
+    id: 'admin-2-line-subregions',
+    type: 'line',
+    source: 'admin-2',
+    filter: ['==', ['get', 'level'], 3],
+    layout: {
+      // visibility: 'none'
+    },
+    paint: {
+      'line-color': '#32a852',
+      'line-width': 1,
+      'line-blur': 0,
+      // 'line-dasharray': 0,
+    }
+  })
 
   map.addLayer({
     id: 'admin-2-fill-regions',
     type: 'fill',
     source: 'admin-2',
-    filter: ['!=', ['get', 'parent_id'], 0],
+    filter: ['==', ['get', 'level'], 2],
     layout: {
       visibility: 'none'
     },
     paint: {
       // 'fill-color': ['get', 'color'],
-      'fill-opacity-transition': { duration: 5500 },
+      'fill-opacity-transition': { duration: 3500 },
       'fill-color': '#BDADE2',
       // 'fill-opacity': [
       //     'case',
@@ -497,7 +501,7 @@ loadData('./result9.json').then(data => {
     id: 'admin-2-line-regions',
     type: 'line',
     source: 'admin-2',
-    filter: ['!=', ['get', 'parent_id'], 0],
+    filter: ['==', ['get', 'level'], 2],
     // visibility: 'none',
     layout: {
       visibility: 'none'
@@ -505,19 +509,23 @@ loadData('./result9.json').then(data => {
     paint: {
       // 'line-color': ['get', 'color'],
       'line-color': '#BDADE2',
-      'line-width': 1,
+      'line-width': {
+        stops: [[1, 0.5],[5, 2.5]]
+      },
       // "line-gap-width" : 1,
 
-      //   'line-join': 'round',
-      //   'line-cap': 'round',
+        // 'line-join': 'round',
+        // 'line-cap': 'round',
       //   "line-round-limit" :50,
       // "line-emissive-strength": 0.01,
-      'line-blur': 1,
+      // 'line-blur': 1,
       // 'line-offset':
       // 'line-outline-width': 1,
       // 'line-outline-color': 'yellow',
       // "line-gap-width ": 1,
-      'line-dasharray': [4, 1]
+      'line-dasharray': {
+        stops:  [[1, [5, 1]],[5, [7, 3]]]
+      }
       // 'line-opacity': 1
       // 'line-opacity': [
       //     'case',
@@ -532,10 +540,10 @@ loadData('./result9.json').then(data => {
     id: 'admin-2-fill-countries',
     type: 'fill',
     source: 'admin-2',
-    filter: ['==', ['get', 'parent_id'], 0],
+    filter: ['==', ['get', 'level'], 1],
     paint: {
       // 'fill-color': ['get', 'color'],
-      'fill-opacity-transition': { duration: 5500 },
+      'fill-opacity-transition': { duration: 3500 },
       'fill-color': '#B94560',
       // 'fill-opacity': [
       //     'case',
@@ -543,7 +551,7 @@ loadData('./result9.json').then(data => {
       //     0.6,
       //     1
       // ],
-      'fill-opacity': 0.4
+      'fill-opacity': 0.25
       // "fill-emissive-strength": 0.1
     }
   })
@@ -552,18 +560,22 @@ loadData('./result9.json').then(data => {
     id: 'admin-2-line-countries',
     type: 'line',
     source: 'admin-2',
-    filter: ['==', ['get', 'parent_id'], 0],
+    filter: ['==', ['get', 'level'], 1],
     // visibility: 'none',
     layout: {
       // "visibility": 'none'
     },
     paint: {
       // 'line-color': ['get', 'color'],
-      'line-color': '#B94560',
-      'line-width': 1.5,
-      'line-gap-width': 1
+      'line-color': '#B92D40',
+      'line-width': {
+        stops: [[0, 0], [2, 0.5], [5, 3], [10, 4]]
+      },
+      // 'line-gap-width': {
+        // stops: [[0, 0], [5, 0], [5, 1]]
+      // }
 
-      // 'line-join': 'round',
+      'line-join': 'round',
       // "line-round-limit" : 10,
       // "line-emissive-strength": 0.01,
       // 'line-blur': 5.9,
@@ -572,8 +584,10 @@ loadData('./result9.json').then(data => {
       // 'line-outline-width': 1,
       // 'line-outline-color': 'yellow',
       // "line-gap-width ": 1,
-      // 'line-dasharray': [10, 1],
-      // 'line-opacity': 1
+      'line-dasharray': {
+      stops: [[1,[10, 2]], [3, [20, 1]], [5, [40, 0]]]
+      },
+      'line-opacity': 0.7,
       // 'line-opacity': [
       //     'case',
       //     ['boolean', ['feature-state', 'hover'], false],
@@ -582,30 +596,10 @@ loadData('./result9.json').then(data => {
       // ]
     }
   })
-
-  // map.addLayer({
-  //     id: 'admin-2-line-states',
-  //     type: 'line',
-  //     // source: 'admin-2',
-  //     filter: ['==', ['get', 'addresstype'], 'state'],
-  //     paint: {
-  //         // 'line-color': ['get', 'color'],
-  //         // 'line-color': '#B94560',
-  //         'line-width': 2,
-  //         'line-dasharray': [20, 1],
-  //         'line-opacity': 0.5
-  //         // 'line-opacity': [
-  //         //     'case',
-  //         //     ['boolean', ['feature-state', 'hover'], false],
-  //         //     0.6,
-  //         //     0.5
-  //         // ]
-  //     }
-  // })
 })
 
 map.on('load', () => {
-  toggleSidebar('left')
+  // toggleSidebar('left')
 })
 
 const sidebarArrow = document.querySelector('#arrow')
@@ -613,48 +607,3 @@ const sidebarArrow = document.querySelector('#arrow')
 sidebarArrow.addEventListener('click', () => {
   toggleSidebar('left')
 })
-// console.log(sidebarArrow)
-
-// // Example usage
-// const countryName = 'Germany';
-// getCountryOSMID(countryName)
-//     .then(geojson => {
-//         if (geojson) {
-//             console.log(`The geojson for ${countryName} is:`, geojson);
-
-//             const feature = turf.multiPolygon(geojson.coordinates)
-
-//             const polygons = {
-//                 type: 'FeatureCollection',
-//                 features: feature
-//             }
-
-//             console.log(polygons)
-
-//             map.addSource('admin-2-germany', {
-//                 type: 'geojson',
-//                 data: feature,
-//                 generateId: true
-//             })
-
-//             map.addLayer({
-//                 id: 'admin-2-fill-germany',
-//                 type: 'fill',
-//                 source: 'admin-2-germany',
-//                 // filter: ['==', ['get', 'admin_level'], 6],
-//                 paint: {
-//                     'fill-color': '#03fdfe',
-//                     'fill-opacity': [
-//                         'case',
-//                         ['boolean', ['feature-state', 'hover'], false],
-//                         0.6,
-//                         0.3
-//                     ]
-//                 }
-//             })
-
-//         } else {
-//             console.log(`Could not find OSM ID for ${countryName}`);
-//         }
-//     })
-//     .catch(error => console.error('Error:', error));

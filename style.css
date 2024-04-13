@@ -7,9 +7,14 @@
     --color_list_region: #f7f4f4;
     --color_list_region_hover: #f7f2f2; 
     --color_list_subregion: #f8f5f5;
-    --color_list_subregion_hover: #B94560;; 
+    --color_list_subregion_hover: #B94560;
+    --color_list_country_prefix: #B94560;
 
 
+}
+
+.mapboxgl-ctrl-logo {
+    display: none !important;
 }
 
 
@@ -154,6 +159,11 @@ li.country {
     font-size: 14px;
 }
 
+li.country.non-active > ul.regions {
+    display: none;
+    /* color: yellow; */
+} 
+
 
 ul.regions  {
     /* font-size: 12px !important; */
@@ -211,12 +221,26 @@ li.subregion:last-child {
 
 
 
-ul .countries > li:hover {
+ul.countries  li.country.non-active:hover {
     background-color: var(--color_list_country_hover);
+    /* background-color: green; */
     /* background: var(--color_list_country_hover) */
     
 }
 
+ul.countries li.country.non-active.full::before {
+    /* background-color: linear-gradient(to right, var(--color_list_subregion_hover) 10%, 50%, transparent 130%); */
+    /* width: 5px; */
+    /* height: 100%; */
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    content: " ";
+    background: url("./images/pattern.png");
+    background-size: cover;
+    margin-right: 4px;
+    
+}
 
 
 ul.regions > li.active {

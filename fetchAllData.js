@@ -39,7 +39,7 @@ fs.readFile('./resultt.json', 'utf-8', (err, data) => {
     //   console.log(item[2])
     //   console.log(level)
 
-      if (level === 1 || level === 2) {
+      if (level === 1 || level === 2 || level === 3) {
         console.log(item)
         answer = await nomination.getRegionPolygon(
           jsonData['array'][i][2],
