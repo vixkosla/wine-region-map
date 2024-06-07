@@ -8,7 +8,7 @@
 
     <link href='https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.css' rel='stylesheet' />
     <link rel="stylesheet" href="./style.css">
-    <!-- <link rel="stylesheet" href=""> -->
+    <link rel="stylesheet" href="./styles/overlay-toggle.css">
 </head>
 
 <body>
@@ -24,6 +24,36 @@
                     &rarr;
                 </div>
             </div>
+        </div>
+
+        <div id="right" class="sidebar flex-center right">
+            <div class="sidebar-content rounded-rect flex-center">
+                <!-- Left Sidebar -->
+                <div id="sidebar-content-list right">
+                    
+                </div>
+                <div id="arrow" class="sidebar-toggle rounded-rect right">
+                    &rarr;
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="map-overlay top">
+        <div class="map-overlay-inner">
+            <fieldset>
+                <label>Select layer</label>
+                <select id="layer" name="layer">
+                    <!-- Each value matches a layer ID. -->
+                    <option value="water">Water</option>
+                    <option value="building">Buildings</option>
+                    <option value="triangles">Triangles</option>
+                </select>
+            </fieldset>
+            <fieldset>
+                <label>Choose a color</label>
+                <div id="swatches"></div>
+            </fieldset>
         </div>
     </div>
 

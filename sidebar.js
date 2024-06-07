@@ -1,5 +1,9 @@
 // import { map } from './main.js'
 import  { map }  from './main.js'
+import  { control }  from './main.js'
+
+const overlayToggle = document.querySelector('.map-overlay')
+
 
 export function toggleSidebar(id) {
     console.log('start click event')
@@ -15,5 +19,8 @@ export function toggleSidebar(id) {
         padding: padding,
         duration: 1000 // In ms. This matches the CSS transition duration property.
     });
+
+    collapsed ? map.addControl(control) : map.removeControl(control) 
+    collapsed ? overlayToggle.classList.remove('hidden') : overlayToggle.classList.add('hidden')
 }
 
