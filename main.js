@@ -1,5 +1,8 @@
+// CLEAR OR FILTER WINE REGIONS FOR THIRD STEP CLICKING 
+
 // import {getCountryOSMID} from './overpass.js'
 import { toggleSidebar } from './sidebar.js'
+import { loadProducers } from './src/js/producers.js'
 
 mapboxgl.accessToken =
   'pk.eyJ1IjoiaG9va2FobG9jYXRvciIsImEiOiI5WnJEQTBBIn0.DrAlI7fhFaYr2RcrWWocgw'
@@ -9,22 +12,30 @@ const defaultObserverPoint = {
   zoom: 3.1
 }
 
+export const control = new mapboxgl.ScaleControl()
+
 export const map = new mapboxgl.Map({
   container: 'map',
   // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
   // style: "mapbox://styles/hookahlocator/clsox9viv009f01pk1mf40pwu",
-  style: 'mapbox://styles/mapbox/satellite-streets-v9',
+  style: 'mapbox://styles/mapbox/satellite-streets-v12',
+  // style: 'mapbox://styles/mapbox/satellite-v8',
+  // style: 'mapbox://styles/mapbox/dark-v11',
   // style: "mapbox://styles/mapbox/dark-v10?optimize=true",
   // style: "mapbox://styles/hookahlocator/clg82vae6008501mpb46y0kwc?optimize=true",
 
   // style: "mapbox://styles/hookahlocator/clsumxbp8002g01pihdv4290g",
   center: defaultObserverPoint.center, // starting position [lng, lat]
   zoom: defaultObserverPoint.zoom, // starting zoom,
-  attributionControl: false
+  attributionControl: false,
   // pitch: 62, // starting pitch
   // bearing: -20 // starting bearing,
   //            maxBounds: bounds
+  projection: 'globe',
+  minZoom: 0.5,
+  maxZoom: 12
 })
+
 
 map.on('style.load', () => {
   // map.setConfigProperty('basemap', 'lightPreset', 'dusk');
@@ -43,14 +54,14 @@ map.on('style.load', () => {
 
 let color = d3.scaleOrdinal(d3.schemeTableau10)
 
-async function loadData (filename) {
+export async function loadData(filename) {
   let response = await fetch(filename)
   let data = await response.json()
 
   return data
 }
 
-async function loadImage (url, name) {
+async function loadImage(url, name) {
   map.loadImage(url, (err, image) => {
     if (err) throw err
     map.addImage(name, image)
@@ -103,7 +114,7 @@ loadData('./result9.json').then(data => {
       )
 
       if (li.classList.contains('active')) {
-  
+
         li.classList.replace('active', 'non-active')
 
       } else if (li.classList.contains('non-active')) {
@@ -227,7 +238,7 @@ loadData('./result9.json').then(data => {
             }
             li.appendChild(ulRegion)
           }
-            li.classList.add('full')
+          li.classList.add('full')
         }
         // }
 
@@ -247,7 +258,7 @@ loadData('./result9.json').then(data => {
   addMapboxHoverListener('admin-2-fill-regions')
   addMapboxHoverListener('admin-2-fill-subregions')
 
-  function defaultListCountry (ul, li) {
+  function defaultListCountry(ul, li) {
     ul.childNodes.forEach(child => {
       // console.log(child.classList)
       if (child.classList.contains('active') && child != li) {
@@ -258,7 +269,7 @@ loadData('./result9.json').then(data => {
     })
   }
 
-  function addMapboxHoverListener (layer) {
+  function addMapboxHoverListener(layer) {
     let idHoveredPolygon = null
 
     map.on('mousemove', layer, e => {
@@ -319,7 +330,7 @@ loadData('./result9.json').then(data => {
     })
   }
 
-  function regionHover (liRegion, region) {
+  function regionHover(liRegion, region) {
     liRegion.onmouseover = function (e) {
       map.setFeatureState(
         {
@@ -353,7 +364,7 @@ loadData('./result9.json').then(data => {
 
   let lastIdContainer = null
 
-  function defaultPositionMap () {
+  function defaultPositionMap() {
     map.setFilter('admin-2-fill-countries', ['==', ['get', 'parent_id'], 0])
     map.setFilter('admin-2-line-countries', ['==', ['get', 'parent_id'], 0])
 
@@ -368,7 +379,7 @@ loadData('./result9.json').then(data => {
     lastIdContainer = null
   }
 
-  function changeCountry (data, id, country) {
+  function changeCountry(data, id, country) {
     let features = []
     // let currentId = id
 
@@ -510,12 +521,12 @@ loadData('./result9.json').then(data => {
       // 'line-color': ['get', 'color'],
       'line-color': '#BDADE2',
       'line-width': {
-        stops: [[1, 0.5],[5, 2.5]]
+        stops: [[1, 0.5], [5, 2.5]]
       },
       // "line-gap-width" : 1,
 
-        // 'line-join': 'round',
-        // 'line-cap': 'round',
+      // 'line-join': 'round',
+      // 'line-cap': 'round',
       //   "line-round-limit" :50,
       // "line-emissive-strength": 0.01,
       // 'line-blur': 1,
@@ -524,7 +535,7 @@ loadData('./result9.json').then(data => {
       // 'line-outline-color': 'yellow',
       // "line-gap-width ": 1,
       'line-dasharray': {
-        stops:  [[1, [5, 1]],[5, [7, 3]]]
+        stops: [[1, [5, 1]], [5, [7, 3]]]
       }
       // 'line-opacity': 1
       // 'line-opacity': [
@@ -572,7 +583,7 @@ loadData('./result9.json').then(data => {
         stops: [[0, 0], [2, 0.5], [5, 3], [10, 4]]
       },
       // 'line-gap-width': {
-        // stops: [[0, 0], [5, 0], [5, 1]]
+      // stops: [[0, 0], [5, 0], [5, 1]]
       // }
 
       'line-join': 'round',
@@ -585,7 +596,7 @@ loadData('./result9.json').then(data => {
       // 'line-outline-color': 'yellow',
       // "line-gap-width ": 1,
       'line-dasharray': {
-      stops: [[1,[10, 2]], [3, [20, 1]], [5, [40, 0]]]
+        stops: [[1, [10, 2]], [3, [20, 1]], [5, [40, 0]]]
       },
       'line-opacity': 0.7,
       // 'line-opacity': [
@@ -598,9 +609,11 @@ loadData('./result9.json').then(data => {
   })
 })
 
-map.on('load', () => {
-  // toggleSidebar('left')
-})
+loadProducers()
+
+// map.on('load', () => {
+// toggleSidebar('left')
+// })
 
 const sidebarArrow = document.querySelector('#arrow')
 // console.log(sidebarArrow)
