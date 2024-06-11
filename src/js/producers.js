@@ -1,4 +1,4 @@
-import { map } from '../../main.js'
+import { map } from './../../main.js'
 import { loadData } from './helpers.js'
 
 export async function loadProducers() {
@@ -12,7 +12,7 @@ export async function loadProducers() {
 
   const listingEl = document.querySelector('.sidebar-content-list.right')
 
-  loadData('../../producers.json').then(producers => {
+  loadData('./../../producers.json').then(producers => {
 
     console.log(producers)
     console.log('Say hi!!')
