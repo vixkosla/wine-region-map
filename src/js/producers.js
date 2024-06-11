@@ -5,6 +5,13 @@ export async function loadProducers() {
 
   console.log('hey user, hi!')
 
+  const popup = new mapboxgl.Popup({
+    closeButton: false,
+    closeOnClick: false
+  });
+
+  const listingEl = document.getElementById('')
+
   loadData('../../producers.json').then(producers => {
 
     console.log(producers)
@@ -53,10 +60,7 @@ export async function loadProducers() {
 
     // POPUP
 
-    const popup = new mapboxgl.Popup({
-      closeButton: false,
-      closeOnClick: false
-    });
+
 
     map.on('mouseenter', 'admin-3-producers', (e) => {
       // Change the cursor style as a UI indicator.
@@ -114,6 +118,10 @@ export async function loadProducers() {
 
 
   });
+
+  function renderListing(features) {
+
+  }
 
 
 

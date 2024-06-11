@@ -91,7 +91,7 @@ loadData('./result9.json').then(data => {
     .sort((a, b) => a.properties.namedetails["name:ru"] > b.properties.namedetails["name:ru"])
   console.log(countries)
 
-  const menu = document.querySelector('#sidebar-content-list')
+  const menu = document.querySelector('.sidebar-content-list.left')
 
   const ul = document.createElement('ul')
   ul.classList.add('rounded-rect')
