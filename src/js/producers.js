@@ -1,5 +1,5 @@
 import { map } from '../../main.js'
-import { loadData } from '../../main.js'
+import { loadData } from './helpers.js'
 
 export async function loadProducers() {
 

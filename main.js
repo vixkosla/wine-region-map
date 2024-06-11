@@ -3,6 +3,7 @@
 // import {getCountryOSMID} from './overpass.js'
 import { toggleSidebar } from './sidebar.js'
 import { loadProducers } from './src/js/producers.js'
+import { loadData } from './src/js/helpers.js'
 
 mapboxgl.accessToken =
   'pk.eyJ1IjoiaG9va2FobG9jYXRvciIsImEiOiI5WnJEQTBBIn0.DrAlI7fhFaYr2RcrWWocgw'
@@ -54,12 +55,7 @@ map.on('style.load', () => {
 
 let color = d3.scaleOrdinal(d3.schemeTableau10)
 
-export async function loadData(filename) {
-  let response = await fetch(filename)
-  let data = await response.json()
 
-  return data
-}
 
 async function loadImage(url, name) {
   map.loadImage(url, (err, image) => {
