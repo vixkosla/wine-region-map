@@ -132,6 +132,7 @@ export async function loadProducers() {
       const label = `${feature.properties.name}`
 
       itemLink.textContent = label
+      itemLink.classList.add('producer-link')
 
       itemLink.addEventListener('mouseover', () => {
         // Highlight corresponding feature on the map
