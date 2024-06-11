@@ -10,7 +10,7 @@ export async function loadProducers() {
     closeOnClick: false
   });
 
-  const listingEl = document.getElementById('')
+  const listingEl = document.querySelector('.sidebar-content-list.right')
 
   loadData('../../producers.json').then(producers => {
 
@@ -102,7 +102,12 @@ export async function loadProducers() {
 
       console.log(features)
 
+
+
       if (features) {
+        renderListing(features)
+
+        // elListing = 
         // const uniqueFeatures = getUniqueFeatures(features, 'iata_code');
         // Populate features for the listing overlay.
         // renderListings(uniqueFeatures);
@@ -120,6 +125,26 @@ export async function loadProducers() {
   });
 
   function renderListing(features) {
+    listingEl.innerHTML = ''
+
+    for (const feature of features) {
+      const itemLink = document.createElement('a');
+      const label = `${feature.properties.name}`
+
+      itemLink.textContent = label
+
+      itemLink.addEventListener('mouseover', () => {
+        // Highlight corresponding feature on the map
+        popup
+          .setLngLat(feature.geometry.coordinates)
+          .setText(label)
+          .addTo(map);
+      });
+
+
+      listingEl.appendChild(itemLink)
+
+    }
 
   }
 
