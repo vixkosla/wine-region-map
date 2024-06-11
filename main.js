@@ -2,7 +2,7 @@
 
 // import {getCountryOSMID} from './overpass.js'
 import { toggleSidebar } from './sidebar.js'
-import { loadProducers } from './src/js/producers.js'
+import { loadProducers } from './producers.js'
 import { loadData } from './src/js/helpers.js'
 
 mapboxgl.accessToken =
