@@ -5,6 +5,13 @@ export async function loadProducers() {
 
   console.log('hey user, hi!')
 
+  const popup = new mapboxgl.Popup({
+    closeButton: false,
+    closeOnClick: false
+  });
+
+  const listingEl = document.querySelector('.sidebar-content-list.right')
+
   loadData('../../producers.json').then(producers => {
 
     console.log(producers)
@@ -53,10 +60,7 @@ export async function loadProducers() {
 
     // POPUP
 
-    const popup = new mapboxgl.Popup({
-      closeButton: false,
-      closeOnClick: false
-    });
+
 
     map.on('mouseenter', 'admin-3-producers', (e) => {
       // Change the cursor style as a UI indicator.
@@ -98,7 +102,12 @@ export async function loadProducers() {
 
       console.log(features)
 
+
+
       if (features) {
+        renderListing(features)
+
+        // elListing = 
         // const uniqueFeatures = getUniqueFeatures(features, 'iata_code');
         // Populate features for the listing overlay.
         // renderListings(uniqueFeatures);
@@ -114,6 +123,30 @@ export async function loadProducers() {
 
 
   });
+
+  function renderListing(features) {
+    listingEl.innerHTML = ''
+
+    for (const feature of features) {
+      const itemLink = document.createElement('a');
+      const label = `${feature.properties.name}`
+
+      itemLink.textContent = label
+
+      itemLink.addEventListener('mouseover', () => {
+        // Highlight corresponding feature on the map
+        popup
+          .setLngLat(feature.geometry.coordinates)
+          .setText(label)
+          .addTo(map);
+      });
+
+
+      listingEl.appendChild(itemLink)
+
+    }
+
+  }
 
 
 
