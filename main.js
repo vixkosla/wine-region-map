@@ -2,6 +2,11 @@
 
 // import {getCountryOSMID} from './overpass.js'
 import { toggleSidebar } from './sidebar.js'
+import { chooseLanguage } from './sidebar.js'
+import { changeProjection } from './sidebar.js'
+
+
+
 import { loadProducers } from './producers.js'
 import { loadData } from './helpers.js'
 
@@ -36,6 +41,14 @@ export const map = new mapboxgl.Map({
   minZoom: 0.5,
   maxZoom: 12
 })
+
+mapboxgl.setRTLTextPlugin('https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.1.0/mapbox-gl-rtl-text.js');
+
+export const mapboxLanguage = new MapboxLanguage({
+  defaultLanguage: 'ru'
+});
+
+map.addControl(mapboxLanguage);
 
 
 map.on('style.load', () => {
@@ -616,3 +629,15 @@ const sidebarArrow = document.querySelector('#arrow')
 sidebarArrow.addEventListener('click', () => {
   toggleSidebar('left')
 })
+
+const sidebarArrowRight = document.querySelector('#arrow.right')
+
+sidebarArrowRight.addEventListener('click', () => {
+  toggleSidebar('right')
+})
+
+// SETUP LANGUAGE TOOGLER 
+chooseLanguage()
+
+// SETUP PROJECTION CHANGE
+changeProjection()

@@ -43,17 +43,25 @@
     <div class="map-overlay top">
         <div class="map-overlay-inner">
             <fieldset>
-                <label>Select layer</label>
-                <select id="layer" name="layer">
+                <label>Change projection of map</label>
+                <select id="projection" name="projection">
                     <!-- Each value matches a layer ID. -->
-                    <option value="water">Water</option>
-                    <option value="building">Buildings</option>
-                    <option value="triangles">Triangles</option>
+                    <option value="globe">Globe</option>
+                    <option value="naturalEarth">Compromise</option>
+                    <option value="mercator">Conformal</option>
                 </select>
             </fieldset>
             <fieldset>
                 <label>Choose a color</label>
                 <div id="swatches"></div>
+            </fieldset>
+            <fieldset>
+                <label>Change a language</label>
+                <div id="languages"></div>
+            </fieldset>
+            <fieldset>
+                <label>Change projection of map</label>
+                <div id="projections"></div>
             </fieldset>
         </div>
     </div>
@@ -62,10 +70,13 @@
     <script src='https://unpkg.com/@turf/turf@6/turf.min.js'></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.4/d3.min.js"></script>
     <script src='https://api.mapbox.com/mapbox-gl-js/v3.2.0/mapbox-gl.js'></script>
+    <script src='https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-language/v1.0.0/mapbox-gl-language.js'></script>
 
 
     <script type="module" src="./main.js"></script>
     <script type="module" src="./sidebar.js"></script>
+
+
 
 
     <!-- <script src="./prepareData.js"></script> -->
