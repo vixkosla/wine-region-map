@@ -23,16 +23,6 @@ export async function loadProducers() {
       // promoteId: 'web_id'
     })
 
-    console.log('check after new source')
-
-    let source = map.getSource('admin-3');
-    if (source) {
-      console.log('Source is working');
-      console.log(source)
-    } else {
-      console.log('Source is not working');
-    }
-
     map.addLayer({
       id: 'admin-3-producers',
       type: 'circle',
@@ -57,6 +47,21 @@ export async function loadProducers() {
         'circle-stroke-color': 'white'
       }
     })
+
+
+
+
+    console.log('check after new source')
+
+    let source = map.getSource('admin-3');
+    if (source) {
+      console.log('Source is working');
+      console.log(source)
+    } else {
+      console.log('Source is not working');
+    }
+
+
 
     // POPUP
 

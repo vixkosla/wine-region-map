@@ -37,7 +37,7 @@ export function chooseLanguage() {
         const languageButton = document.createElement('button')
         languageButton.textContent = language
 
-        languageButton.addEventListener( "click" ,() => {
+        languageButton.addEventListener("click", () => {
             map.setStyle(mapboxLanguage.setLanguage(map.getStyle(), language));
             // map.setLayoutProperty('country-label', 'text-field', ['get', `name_${language}`])
             // map.setLayoutProperty('state-label', 'text-field', ['get', `name_${language}`])
@@ -54,10 +54,43 @@ export function changeProjection() {
 
     const projection = document.getElementById('projection');
 
-    projection.addEventListener( 'change', (event) => {
+    projection.addEventListener('change', (event) => {
         map.setProjection(event.target.value)
         console.log(event.target.value)
     })
+}
+
+export function changeLayer() {
+    const layers = [{
+        color: '#ffffcc',
+        layerId: 'dark-v11'
+    }, {
+        color: '#a1dab4',
+        layerId: 'satellite-streets-v12',
+    }]
+
+    const layersContainer = document.getElementById('layers')
+
+    for (const layer of layers) {
+        const layerButton = document.createElement('button')
+        layerButton.style.backgroundColor = layer.color
+
+        layerButton.addEventListener('click', () => {
+            const layerId = layer.layerId
+            const style = map.getStyle().sprite.replace('mapbox://sprites/mapbox/', '')
+            const newStyle = 'mapbox://styles/mapbox/' + layerId
+
+            console.log(style);
+            if (style != layerId) {
+                map.setStyle(newStyle);
+            }
+        }
+        )
+
+        layersContainer.appendChild(layerButton)
+    }
+
+
 }
 
 
