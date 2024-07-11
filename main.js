@@ -6,7 +6,8 @@ mapboxgl.accessToken =
 
 const defaultObserverPoint = {
   center: [-9.1963944, 38.4093151],
-  zoom: 3.1
+  zoom: 3.1,
+  pitch: 0
 }
 
 export const map = new mapboxgl.Map({
