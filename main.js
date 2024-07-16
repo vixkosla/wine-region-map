@@ -144,7 +144,7 @@ map.on('style.load', () => {
                     'none'
                   )
 
-                  map.setPaintProperty('admin-2-line-regions', 'line-width', 1)
+                  // map.setPaintProperty('admin-2-line-regions', 'line-width', 1)
 
                   const subRegions = data.filter(
                     item => region.properties.web_id == item.properties.parent_id
@@ -182,7 +182,8 @@ map.on('style.load', () => {
                       liRegion.classList.replace('active', 'non-active')
                     } else if (liRegion.classList.contains('non-active')) {
                       map.fitBounds(region.bbox, {
-                        padding: 20
+                        padding: 20,
+                        pitch: 40
                       })
 
                       // changeCountry(data, region.properties.web_id)
@@ -227,7 +228,8 @@ map.on('style.load', () => {
                     }
                   } else {
                     map.fitBounds(region.bbox, {
-                      padding: 20
+                      padding: 20,
+                      pitch: 40
                     })
 
                     // changeCountry(data, region.properties.web_id)
@@ -402,7 +404,8 @@ map.on('style.load', () => {
         }
 
         map.fitBounds(country.bbox, {
-          padding: 20
+          padding: 20,
+          pitch: 0
         })
 
         //countries
@@ -513,7 +516,7 @@ map.on('style.load', () => {
         // 'line-color': ['get', 'color'],
         'line-color': '#BDADE2',
         'line-width': {
-          stops: [[1, 0.5], [5, 2.5]]
+          stops: [[1, 1.5], [5, 2.5]]
         },
         // "line-gap-width" : 1,
 
@@ -527,7 +530,7 @@ map.on('style.load', () => {
         // 'line-outline-color': 'yellow',
         // "line-gap-width ": 1,
         'line-dasharray': {
-          stops: [[1, [5, 1]], [5, [7, 3]]]
+          stops: [[1, [5, 1]], [5, [10, 1]]]
         }
         // 'line-opacity': 1
         // 'line-opacity': [
