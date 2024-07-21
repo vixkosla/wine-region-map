@@ -40,7 +40,7 @@ export const map = new mapboxgl.Map({
   // bearing: -20 // starting bearing,
   //            maxBounds: bounds
   projection: 'globe',
-  minZoom: 0.5,
+  minZoom: 0.35,
   maxZoom: 12
 })
 
@@ -514,7 +514,7 @@ map.on('style.load', () => {
       },
       paint: {
         // 'line-color': ['get', 'color'],
-        'line-color': '#BDADE2',
+        'line-color': 'blueviolet',
         'line-width': {
           stops: [[1, 1.5], [5, 2.5]]
         },
@@ -524,15 +524,15 @@ map.on('style.load', () => {
         // 'line-cap': 'round',
         //   "line-round-limit" :50,
         // "line-emissive-strength": 0.01,
-        // 'line-blur': 1,
+        'line-blur': 0.1,
         // 'line-offset':
         // 'line-outline-width': 1,
         // 'line-outline-color': 'yellow',
         // "line-gap-width ": 1,
         'line-dasharray': {
           stops: [[1, [5, 1]], [5, [10, 1]]]
-        }
-        // 'line-opacity': 1
+        },
+        'line-opacity': 0.65,
         // 'line-opacity': [
         //     'case',
         //     ['boolean', ['feature-state', 'hover'], false],
@@ -639,7 +639,7 @@ async function loadImage(url, name) {
 // toggleSidebar('left')
 // })
 
-const sidebarArrow = document.querySelector('#arrow')
+const sidebarArrow = document.querySelector('.sidebar-toggle.left')
 // console.log(sidebarArrow)
 sidebarArrow.addEventListener('click', () => {
   toggleSidebar('left')

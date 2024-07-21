@@ -10,6 +10,8 @@
     --color_list_subregion_hover: #B94560;
     --color_list_country_prefix: #B94560;
 
+    --color_region_fill: #BDADE2;
+
 
 }
 
@@ -91,6 +93,7 @@ body { margin: 0; padding: 0; }
     z-index: 1;
     width: var(--width_sidebar);
     height: 100%;
+    
     /* font-family: 'GothamPro', "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
 }
 
@@ -181,7 +184,6 @@ ul.regions  {
 }
 
 li.region {
-
     font-size: 12px;
     line-height: 20px;
     text-transform: capitalize;
@@ -193,6 +195,12 @@ li.region:first-child {
 
 li.region:last-child {
     padding-bottom: 4px;
+}
+
+li.region.active::before {
+    content: "» ";
+    color: blueviolet;
+
 }
 
 
