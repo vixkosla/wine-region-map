@@ -21,8 +21,8 @@ export function toggleSidebar(id) {
         duration: 1000 // In ms. This matches the CSS transition duration property.
     });
 
-    collapsed ? map.addControl(control) : map.removeControl(control)
-    collapsed ? overlayToggle.classList.remove('hidden') : overlayToggle.classList.add('hidden')
+    collapsed && (id === 'left') ? map.addControl(control) : map.removeControl(control)
+    collapsed && (id === 'left') ? overlayToggle.classList.remove('hidden')  : overlayToggle.classList.add('hidden')
 }
 
 

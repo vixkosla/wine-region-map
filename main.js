@@ -14,13 +14,15 @@ import { loadData } from './helpers.js'
 mapboxgl.accessToken =
   'pk.eyJ1IjoiaG9va2FobG9jYXRvciIsImEiOiI5WnJEQTBBIn0.DrAlI7fhFaYr2RcrWWocgw'
 
-const defaultObserverPoint = {
+export const defaultObserverPoint = {
   center: [-9.1963944, 38.4093151],
   zoom: 3.1,
-  pitch: 0
+  pitch: 0,
+  bearing: 0
 }
 
 export const control = new mapboxgl.ScaleControl()
+
 
 export const map = new mapboxgl.Map({
   container: 'map',
@@ -41,8 +43,10 @@ export const map = new mapboxgl.Map({
   //            maxBounds: bounds
   projection: 'globe',
   minZoom: 0.35,
-  maxZoom: 12
+  maxZoom: 17
 })
+
+map.addControl(control)
 
 // mapboxgl.setRTLTextPlugin('https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.1.0/mapbox-gl-rtl-text.js');
 
@@ -51,7 +55,23 @@ export const mapboxLanguage = new MapboxLanguage({
 });
 
 // map.addControl(mapboxLanguage);
+let lastIdContainer = null
 
+export function defaultPositionMap() {
+  map.setFilter('admin-2-fill-countries', ['==', ['get', 'parent_id'], 0])
+  map.setFilter('admin-2-line-countries', ['==', ['get', 'parent_id'], 0])
+
+  map.setLayoutProperty('admin-2-line-regions', 'visibility', 'none')
+  map.setLayoutProperty('admin-2-fill-regions', 'visibility', 'none')
+  map.setLayoutProperty('admin-2-fill-subregions', 'visibility', 'visible')
+
+  map.flyTo({ ...defaultObserverPoint })
+
+  map.setPaintProperty('admin-2-fill-countries', 'fill-opacity', 0.25)
+  map.setPaintProperty('admin-2-line-countries', 'line-gap-width', 0)
+
+  lastIdContainer = null
+}
 
 map.on('style.load', () => {
   // map.setConfigProperty('basemap', 'lightPreset', 'dusk');
@@ -66,7 +86,7 @@ map.on('style.load', () => {
     maxzoom: 14
   })
   // add the DEM source as a terrain layer with exaggerated height
-  map.setTerrain({ source: 'mapbox-dem', exaggeration: 3.5 })
+  map.setTerrain({ source: 'mapbox-dem', exaggeration: 2 })
 
   loadData('./result9.json').then(data => {
     console.log(data)
@@ -88,7 +108,7 @@ map.on('style.load', () => {
 
     let countries = data
       .filter(item => item.properties.parent_id == 0)
-      .sort((a, b) => a.properties.namedetails["name:ru"] > b.properties.namedetails["name:ru"])
+      .sort((a, b) => a.properties.namedetails["name"] > b.properties.namedetails["name"])
     console.log(countries)
 
     const menu = document.querySelector('.sidebar-content-list.left')
@@ -100,7 +120,7 @@ map.on('style.load', () => {
     for (let country of countries) {
       const li = document.createElement('li')
 
-      li.textContent = country.properties.namedetails["name:ru"]
+      li.textContent = country.properties.namedetails["name"]
       li.classList.add('non-active')
       li.classList.add('country')
 
@@ -177,6 +197,12 @@ map.on('style.load', () => {
                           'visibility',
                           'visible'
                         )
+
+                        map.setLayoutProperty(
+                          'admin-2-fill-subregions',
+                          'visibility',
+                          'visible'
+                        )
                       }
 
                       liRegion.classList.replace('active', 'non-active')
@@ -213,6 +239,7 @@ map.on('style.load', () => {
                             e.stopPropagation()
 
                             // map.setPitch(60).
+                            map.setLayoutProperty('admin-2-fill-subregions', 'visibility', 'none')
 
                             map.fitBounds(subRegion.bbox, {
                               padding: 20,
@@ -364,23 +391,6 @@ map.on('style.load', () => {
       }
     }
 
-    let lastIdContainer = null
-
-    function defaultPositionMap() {
-      map.setFilter('admin-2-fill-countries', ['==', ['get', 'parent_id'], 0])
-      map.setFilter('admin-2-line-countries', ['==', ['get', 'parent_id'], 0])
-
-      map.setLayoutProperty('admin-2-line-regions', 'visibility', 'none')
-      map.setLayoutProperty('admin-2-fill-regions', 'visibility', 'none')
-
-      map.flyTo({ ...defaultObserverPoint })
-
-      map.setPaintProperty('admin-2-fill-countries', 'fill-opacity', 0.25)
-      map.setPaintProperty('admin-2-line-countries', 'line-gap-width', 0)
-
-      lastIdContainer = null
-    }
-
     function changeCountry(data, id, country) {
       let features = []
       // let currentId = id
@@ -469,7 +479,7 @@ map.on('style.load', () => {
       },
       paint: {
         'line-color': '#32a852',
-        'line-width': 1,
+        'line-width': ["interpolate", ["linear"], ["zoom"], 0, 1, 23, 3],
         'line-blur': 0,
         // 'line-dasharray': 0,
       }
@@ -639,7 +649,7 @@ async function loadImage(url, name) {
 // toggleSidebar('left')
 // })
 
-const sidebarArrow = document.querySelector('.sidebar-toggle.left')
+const sidebarArrow = document.querySelector('.left#arrow')
 // console.log(sidebarArrow)
 sidebarArrow.addEventListener('click', () => {
   toggleSidebar('left')

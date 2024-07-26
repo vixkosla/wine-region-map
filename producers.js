@@ -1,4 +1,7 @@
 import { map } from "./main.js";
+import { defaultPositionMap } from "./main.js"
+import { defaultObserverPoint } from "./main.js"
+
 import { loadData } from "./helpers.js";
 
 export async function loadProducers() {
@@ -18,13 +21,22 @@ export async function loadProducers() {
             <div class="image-container">
             </div>
             <div class="label-container">
-              ${name}
+              <span>${name}</span>
+              <div class="label-container_button">
+                <span class="label-container_button-label">Look At</span>
+                <span class="label-container_button-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" width="20" height="20" viewBox="0,0,500,500">
+                    <rect fill="#bdade2" x="135" y="135" width="225" height="225" rx="15" transform="rotate(-45 250 250)"/>
+                    <g transform="translate(160, 160), scale(0.65)" fill="white" fill-rule="nonzero" stroke="none" stroke-width="10" stroke-linecap="butt" stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0" font-family="none" font-weight="none" font-size="none" text-anchor="none" style="mix-blend-mode: normal"><g transform="scale(8.53333,8.53333)"><path x="100" y="100" d="M13,3c-5.511,0 -10,4.489 -10,10c0,5.511 4.489,10 10,10c2.39651,0 4.59738,-0.85101 6.32227,-2.26367l5.9707,5.9707c0.25082,0.26124 0.62327,0.36648 0.97371,0.27512c0.35044,-0.09136 0.62411,-0.36503 0.71547,-0.71547c0.09136,-0.35044 -0.01388,-0.72289 -0.27512,-0.97371l-5.9707,-5.9707c1.41266,-1.72488 2.26367,-3.92576 2.26367,-6.32227c0,-5.511 -4.489,-10 -10,-10zM13,5c4.43012,0 8,3.56988 8,8c0,4.43012 -3.56988,8 -8,8c-4.43012,0 -8,-3.56988 -8,-8c0,-4.43012 3.56988,-8 8,-8z"></path></g></g>
+                    </svg>
+                </span>
+              </div>
             </div>
-            <div class="description-container"> 
-        <div class="description-container_adress">${
-          adress ? adress : "check information from administrator"
-        }</div> 
-        <div class="description-container_type"> ${type}</div>
+            <div class="description-container">
+              <div class="description-container_adress">${
+                adress ? adress : "check information from administrator"
+              }</div> 
+              <div class="description-container_type"> ${type}</div>
             </div>
             <hr>
             <div class="text-container"> Simple text for filling empty space in new popup</div>
@@ -50,19 +62,22 @@ export async function loadProducers() {
 
   function getBoundingBox() {
     const b = {
-      x1: 0, y1: 0, x2: 0, y2: 0
-    }
+      x1: 0,
+      y1: 0,
+      x2: 0,
+      y2: 0,
+    };
 
     const viewPort = { x: window.innerWidth, y: window.innerHeight };
     const leftSidebar = document.querySelector(".sidebar#left");
-    const rightSidebar = document.querySelector(".sidebar#left");
+    const rightSidebar = document.querySelector(".sidebar#right");
 
     b.y1 = 0;
     b.y2 = viewPort.y;
-    b.x1 = leftSidebar.classList.contains('collapsed') ? 0 : 300
-    b.x2 = rightSidebar.classList.contains('collapsed') ? viewPort.x : viewPort.x - 300
-    
-     
+    b.x1 = leftSidebar.classList.contains("collapsed") ? 0 : 300;
+    b.x2 = rightSidebar.classList.contains("collapsed")
+      ? viewPort.x
+      : viewPort.x - 300;
 
     return [
       [b.x1, b.y1],
@@ -74,9 +89,11 @@ export async function loadProducers() {
 
   const filterEl = document.querySelector("#feature-filter");
 
+  let idAnimation = null;
+
   loadData("producers.json").then((producers) => {
-    console.log(producers);
-    console.log("Say hi!!");
+    // console.log(producers);
+    // console.log("Say hi!!");
 
     let quered = [];
 
@@ -84,6 +101,40 @@ export async function loadProducers() {
       type: "geojson",
       data: producers,
       promoteId: "name",
+    });
+
+    map.addLayer({
+      id: "3d-buildings",
+      source: "composite",
+      "source-layer": "building",
+      filter: ["==", "extrude", "true"],
+      type: "fill-extrusion",
+      minzoom: 15,
+      paint: {
+        "fill-extrusion-color": "#aaa",
+
+        // use an 'interpolate' expression to add a smooth transition effect to the
+        // buildings as the user zooms in
+        "fill-extrusion-height": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          15,
+          0,
+          15.05,
+          ["get", "height"],
+        ],
+        "fill-extrusion-base": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          15,
+          0,
+          15.05,
+          ["get", "min_height"],
+        ],
+        "fill-extrusion-opacity": 0.6,
+      },
     });
 
     map.addLayer({
@@ -108,15 +159,15 @@ export async function loadProducers() {
       },
     });
 
-    console.log("check after new source");
+    // console.log("check after new source");
 
     let source = map.getSource("admin-3");
-    if (source) {
-      console.log("Source is working");
-      console.log(source);
-    } else {
-      console.log("Source is not working");
-    }
+    // if (source) {
+    //   console.log("Source is working");
+    //   console.log(source);
+    // } else {
+    //   console.log("Source is not working");
+    // }
 
     // POPUP
 
@@ -124,7 +175,7 @@ export async function loadProducers() {
       // Change the cursor style as a UI indicator.
       map.getCanvas().style.cursor = "pointer";
 
-      console.log("enter symbol");
+      // console.log("enter symbol");
 
       // Copy coordinates array.
       const coordinates = e.features[0].geometry.coordinates.slice();
@@ -143,6 +194,8 @@ export async function loadProducers() {
         .setLngLat(coordinates)
         .setHTML(description(e.features[0]))
         .addTo(map);
+
+      popupZoom(coordinates);
     });
 
     map.on("mouseleave", "admin-3-producers", () => {
@@ -164,13 +217,13 @@ export async function loadProducers() {
     map.on("moveend", () => {
       const bbox = getBoundingBox();
 
-      console.log(bbox)
+      // console.log(bbox)
 
       const features = map.queryRenderedFeatures(bbox, {
         layers: ["admin-3-producers"],
       });
 
-      console.log(features);
+      // console.log(features);
 
       if (features) {
         const uFeatures = getUniqueFeatures(features, "id");
@@ -217,13 +270,17 @@ export async function loadProducers() {
     });
   });
 
-  function renderListing(features) {
+  function renderListing(data) {
     listingEl.innerHTML = "";
+
+    const features = data.sort((a, b) => a.properties.name > b.properties.name)
 
     if (features.length == 0) {
       const empty = document.createElement("p");
 
+      empty.classList.add("producer-link_empty");
       empty.textContent = "Empty results";
+
       listingEl.appendChild(empty);
     } else {
       for (const feature of features) {
@@ -234,9 +291,41 @@ export async function loadProducers() {
         itemLink.textContent = label;
         itemLink.classList.add("producer-link");
 
-        // itemLink.addEventListener('onclick', clickHandler)
+        itemLink.addEventListener("click", () => {
+          let bounds = new mapboxgl.LngLatBounds();
+          bounds.extend(feature.geometry.coordinates);
 
-        itemLink.addEventListener("mouseover", () => {
+          cleanLayers();
+
+          map.flyTo({
+            center: feature.geometry.coordinates,
+            zoom: 16,
+            pitch: 40,
+          });
+
+          // setTimeout(() => {
+          //   idAnimation = requestAnimationFrame(rotateCamera);
+          //   console.log("animation start");
+          //   console.log(idAnimation);
+          // }, 5000);
+
+          map.once("moveend", () => {
+            // map.setCenter(feature.geometry.coordinates);
+
+            // idAnimation = requestAnimationFrame(rotateCamera);
+            // idAnimation = requestAnimationFrame(rotateCamera);
+            console.log(idAnimation);
+          });
+
+          // cancelAnimationFrame(idAnimation)
+
+          setTimeout(() => {
+            // console.log("times is over");
+            // cancelAnimationFrame(idAnimation);
+          }, 15000);
+        });
+
+        itemLink.addEventListener("mouseenter", () => {
           // Highlight corresponding feature on the map
           popup
             .setLngLat(feature.geometry.coordinates)
@@ -245,12 +334,64 @@ export async function loadProducers() {
             .addTo(map);
         });
 
+        itemLink.addEventListener("mouseleave", () => {
+          popup.remove();
+        });
+
         listingEl.appendChild(itemLink);
       }
     }
+
+    
+    const returnButton = document.createElement("a");
+    returnButton.classList.add("producer-link_return");
+    returnButton.textContent = "return ⏎";
+
+    returnButton.addEventListener('click', returnToBase)
+
+    listingEl.appendChild(returnButton)
   }
 
-  // function clickHandler(e) {
-  //   console.log(e.target)
-  // }
+  function popupZoom(coordinates) {
+    const button = document.querySelector(".label-container_button");
+    button.coordinates = coordinates;
+
+    button.addEventListener("click", clickHandler);
+  }
+
+  function rotateCamera(timestamp) {
+    map.rotateTo((timestamp / 100) % 360, { duration: 0 });
+
+    idAnimation = requestAnimationFrame(rotateCamera);
+  }
+
+  function clickHandler(e) {
+    cleanLayers();
+
+    map.flyTo({
+      center: e.currentTarget.coordinates,
+      zoom: 16,
+      pitch: 40,
+    });
+
+    console.log(e.target.coordinates);
+    console.log(e.currentTarget.coordinates);
+  }
+
+  function cleanLayers() {
+    map.setLayoutProperty("admin-2-fill-countries", "visibility", "none");
+    map.setLayoutProperty("admin-2-fill-regions", "visibility", "none");
+    map.setLayoutProperty("admin-2-fill-subregions", "visibility", "none");
+  }
+
+  function returnToBase() {
+    // map.rotateTo(90, { duration: 1000 });
+    defaultPositionMap()
+
+    // map.flyTo({ ...defaultObserverPoint })
+
+    map.setLayoutProperty("admin-2-fill-countries", "visibility", "visible");
+    map.setLayoutProperty("admin-2-fill-regions", "visibility", "none");
+    map.setLayoutProperty("admin-2-fill-subregions", "visibility", "visible");
+  }
 }

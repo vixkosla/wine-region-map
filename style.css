@@ -15,6 +15,11 @@
 
 }
 
+.mapboxgl-ctrl-bottom-left .mapboxgl-ctrl {
+    margin: 0 0 5px 10px;
+    border-radius: 5px;
+}
+
 .mapboxgl-ctrl-logo {
     display: none !important;
 }
@@ -92,9 +97,13 @@ body { margin: 0; padding: 0; }
     transition: transform 1s;
     z-index: 1;
     width: var(--width_sidebar);
-    height: 100%;
+    height: 95%;
     
     /* font-family: 'GothamPro', "Helvetica Neue", Helvetica, Arial, sans-serif !important; */
+}
+
+.sidebar.left {
+    /* margin-top: 20px; */
 }
 
 /*
@@ -112,7 +121,7 @@ The toggleSidebar() function removes this class from the element in order to exp
 .sidebar-content-list {
     height: 100%;
     width: 100%;
-    padding-bottom: 45px;
+    /* padding-bottom: 45px; */
     box-sizing: content-box;
 }
 
@@ -132,7 +141,7 @@ ul {
 }
 
 ul.countries {
-    padding-top: 5px;
+    /* padding-top: 5px; */
     background-color: var(--color_list_country); 
     /* padding-bottom: 45px; */
     /* margin-bottom: 50px; */
@@ -147,7 +156,7 @@ li {
 }
 
 ul.countries {
-    padding-top: 20px;
+    /* padding-top: 20px; */
 }
 
 ul.countries  li {
