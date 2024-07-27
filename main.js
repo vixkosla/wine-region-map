@@ -579,7 +579,7 @@ map.on('style.load', () => {
         //     0.6,
         //     1
         // ],
-        'fill-opacity': 0.25
+        'fill-opacity': 0.05
         // "fill-emissive-strength": 0.1
       }
     })
@@ -589,7 +589,6 @@ map.on('style.load', () => {
       type: 'line',
       source: 'admin-2',
       'source-layer': 'result9',  
-
       filter: ['==', ['get', 'level'], 1],
       // visibility: 'none',
       layout: {
