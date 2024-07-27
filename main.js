@@ -22,13 +22,13 @@ export const defaultObserverPoint = {
 }
 
 export const control = new mapboxgl.ScaleControl()
-
+export const fullScreenControl = new mapboxgl.FullscreenControl()
 
 export const map = new mapboxgl.Map({
   container: 'map',
   // Choose from Mapbox's core styles, or make your own style with Mapbox Studio
   // style: "mapbox://styles/hookahlocator/clsox9viv009f01pk1mf40pwu",
-  style: 'mapbox://styles/mapbox/satellite-streets-v12',
+  style: 'mapbox://styles/mapbox/satellite-streets-v12?optimize=true"',
   // style: 'mapbox://styles/mapbox/satellite-v8',
   // style: 'mapbox://styles/mapbox/dark-v11',
   // style: "mapbox://styles/mapbox/dark-v10?optimize=true",
@@ -41,12 +41,13 @@ export const map = new mapboxgl.Map({
   // pitch: 62, // starting pitch
   // bearing: -20 // starting bearing,
   //            maxBounds: bounds
-  projection: 'globe',
+  projection: 'mercator',
   minZoom: 0.35,
   maxZoom: 17
 })
 
 map.addControl(control)
+map.addControl(fullScreenControl);
 
 // mapboxgl.setRTLTextPlugin('https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-rtl-text/v0.1.0/mapbox-gl-rtl-text.js');
 
@@ -86,7 +87,7 @@ map.on('style.load', () => {
     maxzoom: 14
   })
   // add the DEM source as a terrain layer with exaggerated height
-  map.setTerrain({ source: 'mapbox-dem', exaggeration: 2 })
+  // map.setTerrain({ source: 'mapbox-dem', exaggeration: 2 })
 
   loadData('./result9.json').then(data => {
     console.log(data)
@@ -440,11 +441,17 @@ map.on('style.load', () => {
     console.log(polygons)
 
 
-    map.addSource('admin-2', {
-      type: 'geojson',
-      data: polygons,
-      promoteId: 'web_id'
-    })
+    // map.addSource('admin-2', {
+    //   type: 'geojson',
+    //   data: polygons,
+    //   promoteId: 'web_id'
+    // })
+
+    map.addSource("admin-2", {
+      type: "vector",
+      url: "mapbox://hookahlocator.5alu6cw5",
+      promoteId: "web_id",
+    });
 
     loadProducers()
 
@@ -452,6 +459,7 @@ map.on('style.load', () => {
       id: 'admin-2-fill-subregions',
       type: 'fill',
       source: 'admin-2',
+      'source-layer': 'result9',  
       filter: ['==', ['get', 'level'], 3],
       layout: {
         // visibility: 'none'
@@ -473,6 +481,7 @@ map.on('style.load', () => {
       id: 'admin-2-line-subregions',
       type: 'line',
       source: 'admin-2',
+      'source-layer': 'result9',  
       filter: ['==', ['get', 'level'], 3],
       layout: {
         // visibility: 'none'
@@ -489,6 +498,7 @@ map.on('style.load', () => {
       id: 'admin-2-fill-regions',
       type: 'fill',
       source: 'admin-2',
+      'source-layer': 'result9',  
       filter: ['==', ['get', 'level'], 2],
       layout: {
         visibility: 'none'
@@ -517,6 +527,7 @@ map.on('style.load', () => {
       id: 'admin-2-line-regions',
       type: 'line',
       source: 'admin-2',
+      'source-layer': 'result9',  
       filter: ['==', ['get', 'level'], 2],
       // visibility: 'none',
       layout: {
@@ -556,6 +567,7 @@ map.on('style.load', () => {
       id: 'admin-2-fill-countries',
       type: 'fill',
       source: 'admin-2',
+      'source-layer': 'result9',  
       filter: ['==', ['get', 'level'], 1],
       paint: {
         // 'fill-color': ['get', 'color'],
@@ -576,6 +588,8 @@ map.on('style.load', () => {
       id: 'admin-2-line-countries',
       type: 'line',
       source: 'admin-2',
+      'source-layer': 'result9',  
+
       filter: ['==', ['get', 'level'], 1],
       // visibility: 'none',
       layout: {

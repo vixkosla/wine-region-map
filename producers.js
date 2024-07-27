@@ -97,9 +97,17 @@ export async function loadProducers() {
 
     let quered = [];
 
+    // hookahlocator.5icxs210
+
+    // map.addSource("admin-3", {
+    //   type: "geojson",
+    //   data: producers,
+    //   promoteId: "name",
+    // });
+
     map.addSource("admin-3", {
-      type: "geojson",
-      data: producers,
+      type: "vector",
+      url: "mapbox://hookahlocator.5vhr0b67",
       promoteId: "name",
     });
 
@@ -141,6 +149,7 @@ export async function loadProducers() {
       id: "admin-3-producers",
       type: "circle",
       source: "admin-3",
+      'source-layer': 'producers',  
       paint: {
         "circle-radius": ["interpolate", ["linear"], ["zoom"], 0, 2, 23, 10],
         "circle-stroke-width": [
@@ -162,12 +171,12 @@ export async function loadProducers() {
     // console.log("check after new source");
 
     let source = map.getSource("admin-3");
-    // if (source) {
-    //   console.log("Source is working");
-    //   console.log(source);
-    // } else {
-    //   console.log("Source is not working");
-    // }
+    if (source) {
+      console.log("Source is working");
+      console.log(source);
+    } else {
+      console.log("Source is not working");
+    }
 
     // POPUP
 
