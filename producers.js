@@ -107,7 +107,7 @@ export async function loadProducers() {
 
     map.addSource("admin-3", {
       type: "vector",
-      url: "mapbox://hookahlocator.5vhr0b67",
+      url: "mapbox://hookahlocator.0khrm9z0",
       promoteId: "name",
     });
 
